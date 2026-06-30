@@ -1,0 +1,3 @@
+npm run dev	Build + Server starten (empfohlen)
+npm run build	Nur neu bauen (dist/), kein Server
+npm run preview	Nur Server starten (ohne neu zu bauen)

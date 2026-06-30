@@ -56,19 +56,22 @@
   --cursor-size: clamp(1.2rem, 0.8rem + 0.5vw, 1.6rem);
   --detail-content-start: 17vw;
 
+  /* min + vw-slope are unchanged (≤ ~1600px is byte-identical to before); only
+     the upper cap is raised so type keeps scaling up to ~2560px (QHD) instead
+     of freezing on large displays. Caps = slope value at 2560px. */
   --font-text:        'DocFont', 'Georgia', serif;
   --font-text-weight: 480;
-  --font-text-size:   clamp(0.7rem, 0.2rem + 0.85vw, 1.05rem);
+  --font-text-size:   clamp(0.7rem, 0.2rem + 0.85vw, 1.56rem);
   --font-text-lh:     1.6;
 
   --font-sub:        'DocFont', 'Georgia', serif;
   --font-sub-weight: 500;
-  --font-sub-size:   clamp(0.9rem, 0.1rem + 1.6vw, 2rem);
+  --font-sub-size:   clamp(0.9rem, 0.1rem + 1.6vw, 2.66rem);
   --font-sub-lh:     1.2;
 
   --font-konsult:        'DocMono', 'Courier New', monospace;
   --font-konsult-weight: 480;
-  --font-konsult-size:   clamp(0.5rem, 0.3rem + 0.35vw, 0.75rem);
+  --font-konsult-size:   clamp(0.5rem, 0.3rem + 0.35vw, 0.86rem);
   --font-konsult-ls:     0.18em;
 }
 
@@ -1187,6 +1190,7 @@ body,
 .detail-media-slot.bulk {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-auto-rows: min-content;
   gap: 0.4rem;
   align-content: start;
   overflow: hidden;
@@ -1411,6 +1415,16 @@ body,
 }
 .detail-text-col > * {
   position: relative;
+}
+/* While the window is being actively resized, suspend the per-paragraph
+   re-hyphenation / text-wrap:pretty work that made the ~270-paragraph thesis
+   column reflow synchronously on every resize step (~100ms long tasks). The
+   class is removed shortly after resizing stops, so the final, settled layout
+   is byte-for-byte identical to before. */
+.detail-resizing .detail-text-col p,
+.detail-resizing .detail-text-col li {
+  hyphens: manual;
+  text-wrap: wrap;
 }
 .detail-text-col > :first-child {
   margin-top: 0;
