@@ -1,6 +1,9 @@
 <script setup>
 definePageMeta({ layout: "home" });
 
+function setCursorRight() { window.__setCursorMode?.('right-half') }
+function setCursorFull() { window.__setCursorMode?.('full') }
+
 const vorwortText = `Ein Mann steht vor einer Tür. Der Türhüter lässt ihn nicht hindurch, verbietet es ihm aber auch nicht. Also wartet er ein Leben lang.
 In Kafkas Türhüterparabel erkannte ich etwas Vertrautes. Auch ich sitze täglich vor einer Art Tür. Sie leuchtet in meiner Hand, reagiert auf jede Berührung und verspricht mir Zugang zu allem. Und trotzdem ertappe ich mich dabei, wie ich lese, ohne anzukommen – tippe, wische, scrolle und kann am Ende nicht sagen, was ich eigentlich gelesen habe.
 Genau hier beginnt diese Arbeit: an der Schwelle zwischen Zugang und Distanz, zwischen Lesen und Verstehen.
@@ -149,7 +152,7 @@ onUnmounted(() => {
     <section class="start-subtitle-row">
       <div class="start-intro-right">
         <p class="start-subtitle">
-          Interaktive Typografie<br>zwischen Kontrolle und Kontrollverlust
+          Interaktive Typografie<br />zwischen Kontrolle und Kontrollverlust
         </p>
         <p class="start-subtitle" style="text-indent: 4vw">Lukas Hecht</p>
       </div>
@@ -213,7 +216,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Prozessdokumentation -->
-      <NuxtLink to="/gestalterisch/prozess" class="start-nav">
+      <NuxtLink to="/gestalterisch/prozess" class="start-nav" @mouseenter="setCursorRight" @mouseleave="setCursorFull">
         <div class="start-nav-cover">
           <video
             src="/assets/start/start-2.mp4"
@@ -226,14 +229,19 @@ onUnmounted(() => {
         <div class="start-nav-info">
           <h3 class="start-block-label">Prozessdokumentation</h3>
           <p>
-            Monatliche Dokumentation des gestalterischen Prozesses –
-            Experimente, Interviews und Recherchen.
+            Die Dokumentation begleitet den gestalterischen Prozess Monat für
+            Monat, von den ersten Experimenten im Februar bis zur fertigen
+            Installation im Juni. Festgehalten werden auch Recherchen sowie die
+            Überlegungen, die zu den jeweiligen Entscheidungen führten. Da die
+            Dokumentation während des Prozesses immer wieder ergänzt wurde,
+            erzählt sie nicht nur, was entstanden ist, sondern auch, warum es so
+            und nicht anders kam.
           </p>
         </div>
       </NuxtLink>
 
       <!-- Kulturgeschichtliche Thesis -->
-      <NuxtLink to="/kulturgeschichtlich" class="start-nav">
+      <NuxtLink to="/kulturgeschichtlich" class="start-nav" @mouseenter="setCursorRight" @mouseleave="setCursorFull">
         <div class="start-nav-cover">
           <video
             src="/assets/start/start-3.mp4"
@@ -261,19 +269,57 @@ onUnmounted(() => {
       <footer class="start-impressum">
         <strong>Bachelor Thesis 2026</strong>
         <strong>Konzept und Gestaltung</strong>
-        Lukas Hecht<br />
+        <a href="https://lukashecht.ch/" target="_blank">Lukas Hecht<br /></a>
         <strong>Mentorierende</strong>
-        Marianna Helen Meyer<br />Jinsu Ahn<br />Dr. Invar-Torre Hollaus<br />
+        <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/marianna-helen-meyer" target="_blank">Marianna Helen Meyer</a><br />
+        <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/jinsu-ahn" target="_blank">Jinsu Ahn</a><br />
+        <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/invar-torre-hollaus" target="_blank">Dr. Invar-Torre Hollaus</a><br />
         <strong>Danke auch an</strong>
-        Prof. Marion Fink<br />Dr. Philipp Stamm<br />Dr. Paloma López
-        Grüninger<br />Ted Davis<br />Gabriele Forster<br />Martin Golombek<br />Katharina
-        Kemmerling<br />
+        <a
+          href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/marion-fink"
+          target="_blank"
+          >Prof. Marion Fink<br
+        /></a>
+        <a
+          href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/philipp-stamm"
+          target="_blank"
+          >Dr. Philipp Stamm<br
+        /></a>
+        <a
+          href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/paloma-lopez-grueninger"
+          target="_blank"
+          >Dr. Paloma López Grüninger<br
+        /></a>
+        <a href="https://teddavis.org/" target="_blank">Ted Davis<br /></a>
+        <a href="https://braintrain.de/" target="_blank"
+          >Gabriele Forster<br
+        /></a>
+        <a href="https://martingolombek.net/de" target="_blank"
+          >Martin Golombek<br
+        /></a>
+        <a href="https://www.katharinakemmerling.com/" target="_blank"
+          >Katharina Kemmerling<br
+        /></a>
         <strong>Schriften</strong>
         ABC Daily Slab Variable Edu<br />
         ABC Diatype Mono Variable Edu<br /><br />
-        FHNW, Hochschule für Gestaltung und Kunst Basel<br />
-        Institut Digitale Kommunikationsumgebungen<br />
-        Bachelor Visuelle Kommunikation und digitale Räume<br />
+        <a
+          href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns"
+          target="_blank"
+        >
+          FHNW, Hochschule für Gestaltung und Kunst Basel</a
+        ><br />
+        <a
+          href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/institute/digitale-kommunikations-umgebungen"
+          target="_blank"
+        >
+          Institut Digitale Kommunikationsumgebungen</a
+        ><br />
+        <a
+          href="https://www.fhnw.ch/de/gestaltung-kunst/studium/angebot/studiengaenge/visuelle-kommunikation-und-digitale-raume-ba"
+          target="_blank"
+          >Bachelor Visuelle Kommunikation und digitale Räume</a
+        ><br />
         Vertiefung: digitale Räume<br /><br />
         © 2026 Lukas Hecht / FHNW HGK Basel.<br />Alle Rechte vorbehalten.
       </footer>

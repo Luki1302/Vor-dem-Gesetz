@@ -4,23 +4,6 @@ title: Kulturgeschichtliche Thesis
 
 <div class="content-page">
 
-<section>
-
-# Bewegtes Lesen<br>Interaktive Typografie als Medium für Aufmerksamkeit und Textverständnis
-
-### Bachelor Thesis 2026<br>Kulturgeschichtliche Thesis
-
-<a href="https://www.fhnw.ch/de/gestaltung-kunst/studium/angebot/studiengaenge/visuelle-kommunikation-und-digitale-raume-ba" target="_blank">Bachelor Studiengang Visuelle Kommunikation und digitale Räume</a><br>
-<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/institute/digitale-kommunikations-umgebungen" target="_blank">Institut Digitale Kommunikations-Umgebungen</a>
-
-### Autor
-<a href="https://www.lukashecht.ch" target="_blank">Lukas Hecht</a>
-
-### Mentorat
-<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/invar-torre-hollaus" target="_blank">Dr. Invar-Torre Hollaus</a>
-
-</section>
-
 <section id="1">
 
 # 1. Einleitung
@@ -409,63 +392,856 @@ Dowling, J. ( Hrsg. ). ( 2024 ). *Three dimensional type.* Counter-Print.
 
 Elam, K. ( 2006 ). *Gestaltungsraster : Ordnungssysteme für Schrift* ( 1. Aufl. ). Princeton Architectural Press.
 
+Heller, S. ( 2010, August ). Jason Santa Maria. PRINT Magazine, 64( 4 ), 24 – 25.
+
 Levin, G. ( with Brain, T. ). ( 2021 ). *Code As Creative Medium : A Handbook for Computational Art and Design*. MIT Press.
 
 Lim, Y. L., & Filleul, Y. ( Hrsg. ). ( 2025 ). *CodeCrafted : Generative design in branding*. viction:ary.
 
 Lupton, E. ( 2014 ). *Type on screen : A critical guide for designers, developers, writers, and students*. Princeton Architectural Press.
 
+Maag, B. ( 2005, Oktober ). Type on Screen. Creative Review, 25( 10 ).
+
+Viction Workshop LTD ( Hrsg. ). ( 2023 ). New Utilitarian : Systematic Approaches to Aesthetics and Design. viction: ary.
+
 Wang, S. ( 2019 ). *Typography for screen : Type in motion* ( 1. Aufl. ). HOAKI BOOKS.
+
+**Online**
+
+Ads of the World. ( 2025 ). Caption with Intention : A New Standard in Cinematic Accessibility. Ads of the World. Abgerufen 29. März 2026, von https://www.adsoftheworld.com/campaigns/captionwith-intention-a-new-standard-in-cinematic-accessibility
+
+Bece, A. Modern Fluid Typography Using CSS Clamp [ Blog-Eintrag]. Smashing Magazine. Abgerufen 29. März 2026, von https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/
+
+Brownie, B. ( 2014 ). A New History of Temporal Typography : Towards Fluid Letterforms. Journal of Design History, 27( 2 ), 167 – 181. Abgerufen 29. März 2026, von https://doi.org/10.1093/jdh/ept036
+
+Daniels, D. ( 2003 ). Strategies of Interactivity. Vom Readymade zum Cyberspace : Kunst/Medien Interferenzen. Hatje Cantz. Abgerufen 29. März 2026, von https://www.hgb-leipzig.de/daniels/vom-readymade-zum-cyberspace/strategien_der_interaktivitaet.html
+
+Demirbas, B. O. ( 2016 ). Typography in interactive spaces and the process of reading. 5th World Conference on Design and Arts ( WCDA ), 3( 5 ), 56 – 61. Abgerufen 29. März 2026, von https://doi.org/10.18844/prosoc.v3i5.1961
+
+Felix. ( 2024, August 22 ). Fluid typography in design systems : From design to code [ Blog-Eintrag ]. Medium. Abgerufen 29. März 2026, von https://uxdesign.cc/fluid-typography-in-designsystems-from-design-to-code-2b5f46a729b4
+
+Guedes, L. S., Marques, L. A., & Vitório, G. ( 2020 ). Enhancing Interaction and Accessibility in Museums and Exhibitions with Augmented Reality and Screen Readers. In K. Miesenberger, R. Manduchi, M. Covarrubias Rodriguez, & P. Peňáz ( Hrsg. ), Computers Helping People with Special Needs ( Bd. 12376, S. 157 – 163 ). Springer International Publishing. Abgerufen 29. März 2026, von https://doi.org/10.1007/978-3-030-58796-3_20
+
+Hansen, S. M. ( 2025 ). Learning Creative Coding ( Version 1. 0. 1 ). Abgerufen 29. März 2026, von https://stigmollerhansen.dk/resume/learning-creative-coding/
+
+Hostetler, S. C. ( 2006, April 6 – 8 ). Integrating Typography and Motion in Visual Communication. 2006 iDMAa and IMS conference. Abgerufen 29. März 2026, von https://www.researchgate.net/publication/229035420_Integrating_Typography_and_Motion_in_Visual_Communication
+
+Janes, R. ( 2020, September 16 ). Using Variable Fonts on the Web. Dinamo Typefaces. Abgerufen 29. März 2026, von https://abcdinamo.com/news/using-variable-fonts-on-the-web
+
+Kuraityé, M., Bessemans, A., & Nuyts, E. ( 2020 ). Impact of Kinetic Typography on Readers‘ Attention. Visible Language, 54( 1 – 2 ), 170 – 185. Abgerufen 29. März 2026, von https://journals.uc.edu/index.php/vl/article/view/4632
+
+Marcotte, E. ( 2011 ). Responsive web design ( J. Zeldman, Hrsg. ). A Book Apart. Abgerufen 29. März 2026, von https://abookapart.com/products/responsive-web-design.html.
+
+Museum Tinguely Basel. ( 2024 ). Unleashed. Neu beleuchtet : Frühe Erkundungen interaktiver Medien in der visuellen Kommunikation. Abgerufen 29. März 2026, von https://www.tinguely.ch/de/ausstellungen/ausstellungen/2024/unleashed.html
+
+Pelz, B. ( o. D. ). Hartung Trenz – Responsive Typography. ARS PHOTONICA. Abgerufen 29. März 2026, von https://arsphotonica.net/hartung-trenz-responsive-typography/
+
+Şohoğlu, B., & Çeken, B. ( 2025 ). Sensör Tabanlı Tipografi Deneyimi: Ses, Işık Ve Mesafe Sensörleri İle Tipografik Uygulamalar. International Social Mentality and Researcher Thinkers Journal, 11( 3 ), 512 – 525. Abgerufen 29. März 2026, von https://doi.org/10.5281/zenodo.15544677
+
+Stanić Loknar, N., Bratić, D., & Agić, A. ( 2020, November 12 ). Kinetic typography – Figuration and technology. Proceedings – The Tenth International Symposium GRID 2020. University of Zagreb, Faculty of Graphic Arts, 719 – 723. Abgerufen 29. März 2026, von https://doi.org/10.24867/GRID-2020-p81
+
+Torun, I. ( o. D. ). ANI232 Kinetic Typography [ Kurs-Manuskript ]. Mimar Sinan Fine Arts University, Faculty of Communication, Animation Department. Abgerufen 29. März 2026, von https://www.academia.edu/129732613/ANI232_Kinetic_Typography?sm=b&rhid=38573332421
+
+Turgut, O. P. ( 2012 ). Kinetic Typography in Movie Title Sequences. Procedia – Social and Behavioral Sciences, 51, 583 – 588. Abgerufen 29. März 2026, von https://doi.org/10.1016/j.sbspro.2012.08.209
+
+Wikipedia. ( 2025, Mai 11 ). Geiz ist geil. Abgerufen 29. März 2026, von https://de.wikipedia.org/w/index.php?title=Geiz_ist_geil&oldid=255905123
+
+Wong, Y. Y. ( 1995 ). Temporal Typography : Characterization of time-varying typographic forms [ MS-Thesis, MIT ]. Abgerufen 29. März 2026, von http://hdl.handle.net/1721.1/29102
 
 <span id="82"></span>
 ## 8.2 Abbildungsverzeichnis
 
-**Abbildung 01 – 02** Santa Maria, J. ( 2014, S. 8 ). [*On Web typography*](https://jasonsantamaria.com/#on-web-typography). A Book Apart.
+**Abbildung 01 – 02** Santa Maria, J. ( with Lupton, E. ). ( 2014, S. 8 ). On Web typography. A Book Apart. Abgerufen 29. März 2026, von https://jasonsantamaria.com/#on-web-typography
 
-**Abbildung 03** Nielsen, J. ( 2006, April 16 ). [*F-Shaped Pattern For Reading Web Content*](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/). Nielsen Norman Group.
+**Abbildung 03** Nielsen, J. ( 2006, April 16 ). F-Shaped Pattern For Reading Web Content. Nielsen Norman Group. Abgerufen 29. März 2026, von https://www.nngroup.com/articles/f-shaped-pattern-readingweb-content-discovered/
 
-**Abbildung 04 – 05** Moran, K. ( 2020, April 5 ). [*How People Read Online : New and Old Findings*](https://www.nngroup.com/articles/how-people-read-online/). Nielsen Norman Group.
+**Abbildung 04 – 05** Moran, K. ( 2020, April 5 ). How People Read Online : New and Old Findings. Nielsen Norman Group. Abgerufen 29. März 2026, von https://www.nngroup.com/articles/how-people-read-online/
 
-**Abbildung 06 – 07** Watson. ( 2016, Juli 13 ). [*Wenn du das hier lesen kannst, ist dein Gehirn zu Meisterleistungen fähig*](https://www.watson.ch/!261068178). Visuell nachbearbeitet vom Autor.
+**Abbildung 06 – 07** Watson. ( 2016, Juli 13 ). Wenn du das hier lesen kannst, ist dein Gehirn zu Meisterleistungen fähig. Abgerufen 29. März 2026, von https://www.watson.ch/!261068178. Der genaue Ursprung der Abbildung ist nicht eindeutig nachvollziehbar. Zur fachlichen Einordnung der Behauptung siehe Davis, M. ( 2003, Oktober 30 ). MRC Cognition and Brain Sciences Unit : Using cognitive theory and innovations in neuroscience to understand and improve mental wellbeing across the lifespan. University of Cambridge. Abgerufen 29. März 2026, von https://www.mrc-cbu.cam.ac.uk/people/matt.davis/Cmabrigde/. Visuell nachbearbeitet und für bessere Lesbarkeit optimiert vom Autor.
 
-**Abbildung 08** Brownie, B. ( 2020, xii ). [*Transforming type*](https://doi.org/10.5040/9781474246187). Bloomsbury. Visuell nachbearbeitet vom Autor.
+**Abbildung 08** Brownie, B. ( 2020, xii ). Transforming type : New directions in kinetic typography. Bloomsbury. Abgerufen 29. März 2026, von https://doi.org/10.5040/9781474246187 visuell nachbearbeitet und für bessere Lesbarkeit optimiert vom Autor
 
-**Abbildung 09 – 14** Shay. ( 2007, Februar 17 ). [*Primiti Too Taa*](https://www.youtube.com/watch?v=KcrTzPAUqic) \[ Regie : Ed Ackerman, Colin Morton \]. YouTube.
+**Abbildung 09 – 14** Shay. ( 2007, Februar 17 ). Primiti Too Taa [ Videoaufnahme ; Regie : Ed Ackerman, Colin Morton ]. YouTube. Abgerufen 29. März 2026, von https://www.youtube.com/watch?v=KcrTzPAUqic
 
-**Abbildung 15 – 16** Van Rooij, G. ( o. D. ). in Filip. ( 2013 ). [Type / Dynamics](https://www.creativeapplications.net/project/typedynamics-lust-and-the-work-of-jurriaan-schrofer-at-the-stedelijk-museum/). *CreativeApplications.Net*.
+**Abbildung 15 – 16** Van Rooij, Gert-Jan. ( o. D. ). [ Fotografien ] in Filip. ( 2013, Dezember 20 ). Type / Dynamics – LUST and the work of Jurriaan Schrofer at the Stedelijk Museum [ Blog-Post ]. CreativeApplications.Net. Abgerufen 29. März 2026, von https://www.creativeapplications.net/project/typedynamics-lust-and-the-work-of-jurriaanschrofer-at-the-stedelijk-museum/
 
-**Abbildung 17** Salinas Claret, M., & Pons Tarrazó, J. J. ( 2019 ). [*Tipografia avanzada*](https://disseny-test.uoc.edu/materials/tipografia-avan/es/4-2-4-multiple-master/). UOC.
+**Abbildung 17** Salinas Claret, M., & Pons Tarrazó, J. J. ( 2019, 4. 2. 4 Multiple Master ). Tipografia avanzada. [ Online-Dissertation, Universitat Oberta de Catalunya ( UOC ) ]. Abgerufen 29. März 2026, von https://disseny-test.uoc.edu/materials/tipografia-avan/es/4-2-4-multiple-master/
 
-**Abbildung 18 – 23** Independent Film Company. ( 2010, August 2 ). [*Enter the Void – Opening Title Sequence*](https://www.youtube.com/watch?v=dL0lNGXoP8E). YouTube.
+**Abbildung 18 – 23** Independent Film Company. ( 2010, August 2 ). Enter the Void – Opening Title Sequence | IFC Films [ Videoaufnahme ; Regie : Gaspar Noé ]. YouTube. Abgerufen 29. März 2026, von https://www.youtube.com/watch?v=dL0lNGXoP8E
 
-**Abbildung 24 – 27** Institute Digital Communication Environments ( IDCE ) et al. ( 2024, S. 114 ). [*unleashed*](https://electrfd.net/unleashed/index.html). electrfd.net.
+**Abbildung 24 – 27** Institute Digital Communication Environments ( IDCE ), Basel Academy of Art and Design FHNW, Schindler, A., & Renner, M. ( 2024, S. 114 ). unleashed. Revisiting Early Explorations of Interactive Media in Visual Communication Design. electrfd. net. Abgerufen 29. März 2026, von https://electrfd.net/unleashed/index.html
 
-**Abbildung 28 – 31** Garnier, E. ( 2009, November 7 ). [*Nespresso. What else ?*](https://www.youtube.com/watch?v=_6V0Rhi_RI0) YouTube.
+**Abbildung 28 – 31** Garnier, E. ( 2009, November 7 ). Nespresso. What else ? George Clooney et John Malkovich. Nego [ Videoaufnahme ]. YouTube. Abgerufen 29. März 2026, von https://www.youtube.com/watch?v=_6V0Rhi_RI0
 
-**Abbildung 32** Schulz, V. ( o. D. ). in Gnirke, K., & Hesse, M. ( 2019 ). [Ceconomy in der Krise : Geiz ist so ungeil](https://www.spiegel.de/wirtschaft/ceconomy-media-markt-saturn-in-der-krise-geiz-ist-so-ungeil-a-00000000-0002-0001-0000-000166735192). *Der Spiegel*, ( 45 ).
+**Abbildung 32** Schulz, Volkmar ( o. D. ). [ Fotografie ] in Gnirke, K., & Hesse, M. ( 2019, November 1 ). Ceconomy ( Media Markt, Saturn ) in der Krise : Geiz ist so ungeil. Der Spiegel, ( 45 ). Abgerufen 29. März 2026, von https://www.spiegel.de/wirtschaft/ceconomy-media-markt-saturn-in-der-krise-geiz-ist-so-ungeil-a-00000000-0002-0001-0000-000166735192
 
-**Abbildung 33 – 36** FCB Chicago et al. ( 2025 ). [*Caption With Intention*](https://www.captionwithintention.org).
+**Abbildung 33 – 36** FCB Chicago, Chicago Hearing Society, & Rakish Entertainment. ( 2025 ). Caption With Intention. Caption With Intention | Accessible & Engaging Caption Design. Abgerufen 29. März 2026, von https://www.captionwithintention.org
 
-**Abbildung 37 – 48** Fleisher, O. et al. ( 2020 ). [Masks Work. Really. We'll Show You How](https://www.nytimes.com/interactive/2020/10/30/science/wear-mask-covid-particles-ul.html). *The New York Times*.
+**Abbildung 37 – 48** Fleisher, O., Gianordoli, G., Parshina-Kottas, Y., Patanjali, K., Peyton, M., & Saget, B. ( 2020, Oktober 30 ). Masks Work. Really. We’ll Show You How. The New York Times. Abgerufen 29. März 2026, von https://www.nytimes.com/interactive/2020/10/30/science/wear-mask-covid-particles-ul.html
 
 <span id="83"></span>
 ## 8.3 Weitere Quellen / Dokumente
 
-### Interview Gabriele A. Forster
+## Interview Gabriele A. Forster
 
-Gabriele A. Forster ist Dipl.-Betriebswirtin und Expertin für bewusste und unbewusste Wahrnehmungs- und Lernvorgänge. Sie ist Inhaberin der Firma BrainTrain in Weinstadt ( DE ) und Autorin des Buches «Effizient Lesen », das in der 8. Auflage erschienen ist. Seit 36 Jahren vermittelt sie Techniken zum gehirngerechten Arbeiten für Menschen jeden Alters und Berufsfelds.
+Gabriele A. Forster ist Dipl.-Betriebswirtin
+und Expertin für bewusste und unbewusste Wahrnehmungs- und
+Lernvorgänge. Sie ist Inhaberin der Firma BrainTrain in Weinstadt
+( DE ) und Autorin des Buches «Effizient Lesen », das in der
+8. Auflage erschienen ist. Seit 36 Jahren vermittelt sie Techniken
+zum gehirngerechten Arbeiten für Menschen jeden Alters und
+Berufsfelds. Ihr Ziel ist es, gehirngerechtes Arbeiten alltagstauglich
+zu machen, Stress zu reduzieren und zu zeigen, dass jeder
+geistig gesunde Mensch zu aussergewöhnlichen Lern- und Leseleistungen
+fähig ist. Das folgende Interview entstand im Rahmen
+dieser Bachelorarbeit über interaktive Typografie als Medium für
+Aufmerksamkeit und Textverständnis.
 
 ### L. Hecht
 
-In wissenschaftlichen Arbeiten zum Thema Lesen und Typografie begegnen wir häufig absoluten Aussagen : «Bewegung erhöht die Aufmerksamkeit », «Fettdruck verbessert das Textverständnis ». Wie gehst du damit um ?
+In wissenschaftlichen Arbeiten zum Thema
+Lesen und Typografie begegnen wir häufig absoluten Aussagen :
+«Bewegung erhöht die Aufmerksamkeit », «Fettdruck verbessert
+das Textverständnis ». Wie gehst du damit um ?
 
 ### G. Forster
 
-Je nachdem, welche Zielgruppe untersucht wurde oder welches Ziel die Untersuchung hatte – es wird versucht, gemeinsame Nenner zu finden, die für alle Menschen passen. Da Lesen stark mit dem Gehirn zu tun hat, ist das fast unmöglich. Oft heisst es : «Es hat Einfluss ». Es müsste aber eher heissen : «Es kann Einfluss haben. » Denn, bei einer Person hat es einen Einfluss, bei der nächsten überhaupt keinen. Was den einen stört, findet ein anderer wertvoll.
+Je nachdem, welche Zielgruppe untersucht
+wurde oder welches Ziel die Untersuchung hatte – es wird versucht,
+gemeinsame Nenner zu finden, die für alle Menschen
+passen. Da Lesen stark mit dem Gehirn zu tun hat, ist das fast
+unmöglich. Oft heisst es : «Es hat Einfluss ». Es müsste aber eher
+heissen : «Es kann Einfluss haben. » Denn, bei einer Person hat
+es einen Einfluss, bei der nächsten überhaupt keinen. Was den
+einen stört, findet ein anderer wertvoll.
 
-Aber das wäre zum Beispiel dann ein guter Aspekt, den man zumindest einfliessen lassen kann : dass sich die Aussagen immer auf eine ganz bestimmte Lesesituation beziehen. Es fragt sich grundsätzlich : Reden wir von Informationstexten oder reden wir von Prosatexten, wie Romanen oder Unterhaltungsliteratur ? Geht es darum, Informationen zu transportieren, oder möchte man Leute unterhalten ? Ein Roman ist etwas völlig anderes fürs Gehirn als ein Informationstext.
+Aber das wäre zum Beispiel dann ein guter Aspekt, den man zumindest
+einfliessen lassen kann : dass sich die Aussagen immer
+auf eine ganz bestimmte Lesesituation beziehen. Es fragt sich
+grundsätzlich : Reden wir von Informationstexten oder reden
+wir von Prosatexten, wie Romanen oder Unterhaltungsliteratur ?
+Geht es darum, Informationen zu transportieren, oder möchte
+man Leute unterhalten ? Ein Roman ist etwas völlig anderes fürs
+Gehirn als ein Informationstext.
 
-Wir lernen in der Schule lesen, von der ersten bis zur vierten Klasse, und womit ? Mit Unterhaltungstexten. Dann kommst du in die fünfte Klasse und plötzlich hast du fast nur noch Informationstexte vor dir, und kein Mensch sagt dir, dass es da einen wesentlichen Unterschied gibt.
+Wir lernen in der Schule lesen, von der ersten bis zur vierten
+Klasse, und womit ? Mit Unterhaltungstexten : «Der Peter geht
+mit der Anne in die Schule », Ausschnitte aus «Die kleine Hexe »
+und so weiter. Dann kommst du in die fünfte Klasse und plötzlich
+hast du fast nur noch Informationstexte vor dir, und kein
+Mensch sagt dir, dass es da einen wesentlichen Unterschied gibt.
+Nun lernen wir in der Schule zudem, unbewusst auch Informationstexte
+wie Prosatexte zu schreiben – und lernen damit, Informationstexte zu produzieren, die schon per se schlecht lesbar
+sind. Ich sage immer : Wenn ich einen Roman lese, möchte ich,
+wie vermutlich 99 Prozent der Menschen, nicht sofort wissen,
+wer der Mörder ist. Genau das möchte ich aber beim Informationstext
+: Ich möchte von Beginn an wissen, warum ich den Text
+lese.
+
+Es ist nachvollziehbar, dass wir Lesen anhand von Prosatexten
+lernen. Wir übernehmen diese Lesetechnik automatisch ins Lesen
+von Informationstexten, weil uns niemand sagt, dass das ein
+himmelweiter Unterschied ist. Wir lernen zwar in der Schule, wie
+man einen Bericht schreibt. Uns wird jedoch nicht klargemacht,
+dass ich beim Informationstext zum Beispiel den Nutzen an den
+Anfang stellen sollte. Auch dadurch verliert man ab der fünften
+Klasse Schritt für Schritt das Textverständnis – da geht es um
+Erosion, Sedimentation, Korrosion und lauter Fremdwörter, und
+Texte, die so geschrieben sind, als wären es Unterhaltungstexte.
+Das funktioniert für unser Gehirn nicht. Man kümmert sich
+dann um Satzspiegel und um Fettdruck, um den Text lesbarer
+zu machen und vergisst dabei, sich um den Aufbau des Textes
+zu kümmern.
+
+### L. Hecht
+
+In meiner Arbeit steht weniger der Inhalt
+selbst im Vordergrund, sondern die Form der Vermittlung. Inwiefern
+beeinflusst das die gestalterischen Entscheidungen ?
+
+### G. Forster
+
+Was du rüberbringst, ist abhängig vom Inhalt.
+Fett, kursiv und so weiter – das kann super sein, aber es
+kann dir auch komplett den Text zerstören. Stell dir mal vor,
+du hast einen Roman und da ist ständig irgendwas fett kursiv
+gedruckt. Den liest du nicht lange. Diese Effekte gibt es auch
+beim Informationstext. Da kommt es nämlich auch darauf an :
+Hast du einen langen oder kurzen Informationstext ? Hat jemand
+schon Vorkenntnisse oder ist es etwas völlig Neues ? All
+das entscheidet letztendlich, in welchem Umfang Fettdruck,
+Kursivschrift und so weiter gut ist oder nicht. Wenn du extrem
+viel über Quantenphysik weisst und da sind Dinge fettgedruckt,
+die für dich nebensächlich sind, dann wirst du vermutlich vom
+eigentlichen Inhalt mehr abgelenkt. Die Form der Vermittlung
+ist immer abhängig von der Art des Textes und dem Leseziel.
+
+### L. Hecht
+
+Dieses Hervorheben von einzelnen Teilen
+aus dem Text basiert auf einer Entscheidung über Wichtigkeit,
+die du als Designer: in gar nicht treffen kannst, weil man weder
+der Autor noch die eigentliche Zielgruppe ist.
+
+### G. Forster
+
+Genau. Als Gestalter: in musst du letztendlich
+wissen, was der /die Auftraggeber: in damit vermitteln will. Diese
+Information ist fürs Design entscheidend. Schau dir AGBs an : Die sind häufig nicht umsonst in einem schlechten Schriftsatz,
+mit einer Schriftgrösse, die kaum jemand lesen kann. Möchte
+man, dass der Leser die AGBs versteht, oder möchte man, dass er
+aufgibt und einfach unterschreibt ? Und da sind wir wieder beim
+Punkt : Was ist das Ziel des Ganzen ?
+
+### L. Hecht
+
+Im Kern geht es darum, wie Schrift am Bildschirm
+wirkt und wie digital vermittelte Texte wahrgenommen
+werden. Ich möchte dabei gestalterische Ansätze entwickeln,
+die den /die Betrachter: in dazu bringen, über das eigene Leseverhalten
+nachzudenken – also sehr reflektiv : Was sehe ich, was
+verstehe ich, was kann ich aufgrund des Visuellen erfassen ?
+
+### G. Forster
+
+Dann müssen wir aufpassen : Definiere
+« Textverständnis » und « Wahrnehmung » – das eine ist Wahrnehmung,
+das andere ist Textverständnis. Textverständnis ist, wenn
+ich etwas lese und verstehen möchte, was « Sedimentation » bedeutet.
+Wahrnehmung ist : Ich sehe etwas, ich erkenne etwas.
+Wahrnehmung ist Voraussetzung fürs Verständnis, aber beides
+sind verschiedene Dinge.
+
+### L. Hecht
+
+In diesem Zusammenhang interessieren
+mich auch Arbeiten, die mit onomatopoetischen Texten arbeiten
+– also Wortlauten, die keinen definierten, inhaltlichen Bedeutungsträger
+haben, aber trotzdem durch Ton und visuelle
+Sprache einen emotionalen Bezug schaffen. Wie wird dadurch
+die Wahrnehmung beeinflusst ?
+
+### G. Forster
+
+Der emotionale Bezug entsteht hauptsächlich
+durch den Ton. Wenn du den gleichen Text ohne Ton abspielst,
+macht er nichts mit dir – du beendest vermutlich innerhalb
+von zehn Sekunden, ohne es zu Ende zu schauen. Das
+Interessante ist der Ton, weil er einen Zusammenhang zum Visuellen
+bringt. So entsteht die Emotion.
+
+### L. Hecht
+
+Ich habe das Gefühl, dass durch Interaktion
+auch etwas Ähnliches passieren kann – wenn man durch einen
+motorischen Eingriff die Bewegung steuert, sei es die Geschwindigkeit
+oder ob man durch Bewegung eine statische Visualisierung
+erst zum Bewegen bringt.
+
+An dieser Stelle gab ich G. Forster einen Einblick
+in eines meiner gestalterischen Experimente.
+
+### G. Forster
+
+Dein Experiment mit dem hervorgehobenen
+Text ist sehr spannend. Es fragt sich nur, in welcher Geschwindigkeit
+? Es ist letztendlich wahrnehmungsabhängig : Für
+manche produziert das positiven Stress, eine Herausforderung,
+die bewältigt werden kann. Für andere wiederum kann dieselbe
+Geschwindigkeit negativen Stress, Überforderung oder genervt
+sein auslösen.
+
+Bewegung kann Gefahr bedeuten. Deswegen springt unser Hirn
+auf Bewegung an – es beobachtet, ob eine Gefahr vorliegt. Wenn
+jemand in deinem Raum langsam hin und her läuft und du arbeitest
+in normaler Ruhe, blendest du die Bewegung nach einer
+Weile aus. In dem Moment aber, in dem sich die Geschwindigkeit
+verändert, schneller wird, wird sich dein Fokus sofort wieder
+auf die Bewegung richten. Das heisst, Bewegung löst kurzfristig
+Stress aus – Fokussierung durch Adrenalin. Bin ich dauerhaft in
+dieser Situation, komme ich in die Kortisolproduktion. Jetzt wissen
+wir aber, dass eine gewisse Portion positiver Stress gut ist,
+wenn er als bewältigbare Herausforderung gesehen wird. Genau
+dieser Peak, ab dem die Herausforderung zu gross wird, ist bei
+jedem Menschen woanders.
+
+Ein solcher Text, der mit hervorgehobenen Wörtern läuft, ist
+grundsätzlich super, wenn er schneller ist als die 160 Wörter pro
+Minute, mit der der Mensch normalerweise liest. Denn 160 Wörter
+pro Minute entsprechen dem Niveau der vierten Klasse. Du
+kannst das Niveau anheben, bis die Leute merken: «Boah, meine
+Aufmerksamkeit ist hier super.» Und dann kommt der Moment,
+da wird es zu schnell – negativer Stress –, dann verlierst du den
+Text. Dieser Punkt ist eben bei jedem Menschen woanders.
+
+### L. Hecht
+
+Da greife ich ja gezielt ein, weil es bei meinem
+Beispiel um die aktive Interaktion mit dem Text geht –
+der /die User: in entscheidet durch die Scrollbewegung, wann
+der nächste Satz eingeblendet wird. Durch die Befragung mit
+Legastheniker:innen, hat sich gezeigt, dass das Format ihnen
+hilft, weil die Augen weniger im Text herumspringen.
+
+### G. Forster
+
+Ganz spannend ! Und jetzt kommt etwas
+Interessantes : Im Seminar stellt sich manchmal heraus, dass
+Legastheniker: innen schneller lesen als die anderen Teilnehmenden.
+Während der Rest der Gruppe mit ca. 160 – 180 Wörtern
+pro Minute lesen, liest er /sie beispielsweise mit 240 Wörtern pro
+Minute. Legasteniker: innen haben nach der vierten Klasse weiter
+an ihrer Lesetechnik gearbeitet, während die anderen dazu
+nicht mehr angeleitet wurden. Das Schlimmste, was du Legastheniker:
+innen nach dem grundsätzlichen Lesen lernen sagen
+kannst, ist « lies langsam ». Wenn sie schneller lesen, merken
+sie, dass sie aus ihrer Spirale herauskommen, da das Gehirn das
+Wortbild zwar anders abspeichert, aber schon längst gelernt hat,
+damit umzugehen.
+
+### L. Hecht
+
+Das ist sehr aufschlussreich. Ich habe auch
+schon daran gedacht, wie man Leser:innen dazu bringt, zunächst festzustellen, wie schnell sie überhaupt lesen.
+
+### G. Forster
+
+Genau – das mache ich im Seminar. Weil
+wenn die Teilnehmenden nicht wissen, wie schnell sie lesen, wissen
+sie nachher auch nicht, ob sie wirklich schneller geworden
+sind. Noch etwas Grundsätzliches : Konzentration ist immer ein
+Ergebnis, nie eine Voraussetzung. Du setzt dich nicht hin und
+sagst « Ich konzentriere mich. » – das geht nicht. Konzentration
+entsteht. Wenn du mit Begriffen wie « Konzentration » und « Aufmerksamkeit
+» arbeitest : Konzentration ist immer ein Ergebnis,
+nie eine Voraussetzung. Was beim einen konzentrationsfördernd
+ist, ist beim anderen eine Konzentrationsbremse.
+
+Kennst du übrigens die 7 ± 2 Wahrnehmungsregel ? Du kannst 7
+plus minus 2 Informationen gleichzeitig bewusst im Hirn verarbeiten
+– mehr geht mit einem normalen Gehirn erst einmal
+nicht. Die meisten Menschen sind bei 5 Informationen. Ab
+sechs fängt der Kampf schon an. Sieben ist für viele schon sehr
+grenzwertig oder überfordernd. Daher kommt die 7 × 7-Regel bei
+Präsentationen – maximal sieben bullet points, sieben Wörter …
+allerdings arbeitet die schon an der Wahrnehmungsgrenze der
+meisten Menschen. Deshalb sage ich : lieber 5 × 5, weil der Durchschnittsmensch
+ab mehr als fünf Wörtern lesen muss und du damit
+die Aufmerksamkeit des Publikums verlierst.
+
+### L. Hecht
+
+Das Einordnen in Textabschnitte hängt also
+auch davon ab, wie viele neue Informationen drin sind.
+
+An dieser Stelle zeigte mir G. Forster eine
+Aufgabe zunächst in Text- und danach dieselbe Aufgabe in
+Bildform.
+
+### G. Forster
+
+Genau. Stell dir vor, du versuchst eine Aufgabe
+im Kopf zu lösen. Sie beginnt mit : Stellen Sie sich ein Schachbrett
+mit drei Reihen vor. In jeder Reihe befinden sich 3 Felder,
+im zentral mittigen Feld befindet sich die Zahl 6. Diese ist um
+1 größer als die über ihr stehende …. Spätestens ab hier liest du
+nur noch – du baust zunächst das Bild im Kopf auf, und dann
+stösst du an die Wahrnehmungsgrenze von 5 – 7 Informationen.
+Da jetzt keine weitere Information mehr reingeht, kommt das
+« Oh Gott, jetzt muss ich denken » -Gefühl. Das bedeutet : Schon
+bist du im mentalen Overflow. Was machst du dann ? Du malst
+ein Bild, um die Aufgabe zu lösen.
+
+Der grosse Irrtum ist, dass der Text im gezeigten Beispiel mehr
+Informationsmenge sei als das Bild. Das stimmt jedoch nicht.
+Ein Bild spricht andere Gehirnregionen an als ein Text. Du hast
+im Gehirn «Rennpferde » – die schnellen visuellen, automatischen,
+parallel ablaufenden Prozesse – und « Schnecken » – die analytischen, langsamen, nacheinander ablaufenden Prozesse.
+Wenn du sowohl die visuellen als auch die analytischen Prozesse
+ansprichst, brauchst du nur einen Blick, um die Aufgabe zu
+lösen. Das ist gehirngerechtes Arbeiten : immer beides ansprechen,
+sowohl die visuellen als auch die analytischen Verarbeitungsprozesse
+des Gehirns.
+
+Du hast einen Wortbildspeicher. Das siehst du an jenem Text, in
+dem die Buchstaben durcheinander gewürfelt sind – erster und
+letzter Buchstabe an der richtigen Stelle, alle anderen gemischt.
+Wenn du das Wort schon kennst, stellt dein Hirn es automatisch
+gerade. Wenn du das Wort noch nicht kennst, geht das nicht. Die
+Mindesteinheit beim Lesen sollte immer ein Wort oder ein Satz
+sein. Was du beim Wort hast, hast du beim Satz auch : Das Gehirn
+kennt beim Wort das Wortbild. Ähnlich ist es bei der Grammatik.
+Ich erkenne unbewusst die grammatikalische Struktur und weiss
+aufgrund der Satzkonstruktion schon, was als nächstes kommen
+muss. Das ist eine Hochrechnung aufgrund von Erfahrung.
+
+Je schneller man liest, desto leichter liest man solche Texte. Von
+daher würde ich bei deinen Experimenten auf Wortebene als
+Mindestmass setzen. Du kannst aber auch auf Satzebene gehen,
+solange es keine überlangen Schachtelsätze sind. Dann wäre
+noch die Frage des Inhalts : Was möchte man transportieren ?
+Will man Interesse wecken oder informieren ?
+
+### L. Hecht
+
+Wenn wir schon bei der Lesegeschwindigkeit
+sind, möchte ich gerne auf RSVP zu sprechen kommen.
+RSVP – Rapid Serial Visual Presentation – ist ein System, bei
+dem Wörter einzeln an einer fixen Position erscheinen. Es gibt
+Studien, die zeigen, wie diese Geschwindigkeit exponentiell erhöht
+wird und man bei sehr hoher Geschwindigkeit immer noch
+den Inhalt erfassen kann. Dieses System wird zunehmend auch
+in sozialen Medien eingesetzt. Würdest du einen Roman auf diese
+Art lesen ?
+
+### G. Forster
+
+Nein, natürlich nicht. Dieses System kannst
+du für kurze Botschaften einsetzen, einen einzelnen Satz. Damit
+erhöhst du kurz die Spannung. Bei längeren Texten hört man da
+schnell auf, weil du deinem Gehirn die Möglichkeit nimmst, den
+Zusammenhang schon zu bilden, bevor der Satz zu Ende ist. In
+einem solchen Fall kann man dann nicht mehr zurückspringen.
+
+### L. Hecht
+
+Genau – Regressionen sind dann nur über
+die Zeitachse möglich. Was mir bei rein animierten Formaten oft
+fehlt, sind Texthierarchien wie Überschriften und Pausen. Weissraum
+kann auch als Pause gelten. Bei Animationen kann das nur
+durch einprogrammierte Zeitfenster passieren – und diese werden
+vom Designer festgelegt, nicht vom Leser.
+
+### G. Forster
+
+Stell dir vor, du liest etwas Interessantes
+und jemand baut dir eine Zwangspause ein. Du fühlst dich ausgebremst,
+weil du von der Steuerung weg bist – und damit hast
+du das Kontrollgefühl nicht mehr. Man könnte das mit einem
+« Weiter-Button » lösen. Weil der eine lange braucht, um nachzudenken,
+der andere bereits beim Lesen nachdenkt und sofort für
+das Nächste bereit ist.
+
+### L. Hecht
+
+In deinem Buch «Effizient lesen » ( 2021 ) betonst
+du die Strategien zur aktiven Kontrolle des eigenen Leseprozesses.
+Wie wichtig ist das Gefühl von Kontrolle beim Lesen ?
+
+### G. Forster
+
+Hierbei ist es notwendig, zwischen Steuerung
+und Kontrolle zu unterscheiden. Hast du die Möglichkeit,
+selbst zu steuern – über Buttons, einen Schieberegler oder die
+Neigung eines Handys – dann bist du in der Steuerung. Steuerung
+heisst : Ich produziere Kontrolle. Steuern ist eine Tätigkeit,
+Kontrolle ist eine Emotion. Mit dem Verhalten der Steuerung
+löst du das Ergebnis «Kontrollgefühl » aus.
+
+### L. Hecht
+
+Was hältst du von nichtlinearen Textstrukturen
+? Also Formate, in denen der /die Leser:in den Ablauf selbst
+bestimmen kann – etwa Romane mit verzweigten Handlungssträngen
+oder interaktive E-Books und PDFs, in denen man sich
+über Links durch den Text bewegt.
+
+### G. Forster
+
+Das erste Beispiel – dass du am Ende eines
+Abschnitts wählen kannst, in welche Richtung du weitergehst –
+finde ich super. Bei einem guten Fachbuch, in dem du am Ende
+zum passenden Kapitel geleitet wirst, ist das genial. Hast du
+aber einen Text online mit vielen Links, dann verliert man sich
+schnell. Es kommt darauf an : Kommt der Link zu früh und du
+folgst ihm, hast du unter Umständen zu wenig Information, um
+das Nächste einordnen zu können. Kommt er an der richtigen
+Stelle, ist das genial – nur viel Arbeit.
+
+### L. Hecht
+
+Es gibt gestalterische Projekte, bei denen
+man aktiv dazu animiert wird, etwas mit dem Inhalt zu machen
+– Interaktion und Bewegung kommen beide zur Sprache.
+
+### G. Forster
+
+Ja, und jetzt kommt es drauf an : Wenn ich
+klicke und die Verlinkung nicht hundertprozentig stimmt, dann
+komme ich vielleicht zu einem Bild, das zum Ursprungstext gar
+nicht passt. Dann kann ein falscher Zusammenhang entstehen.
+Wenn man damit arbeitet, muss man extrem aufpassen. Du hast
+mit dem, was du anklickbar machst und welche Klickstrecke
+möglich ist, als Designer: in enormen Einfluss auf das Ergebnis,
+das im Kopf des /der Leser: in entsteht. Der / Die Lesende hat
+zwar scheinbar die Kontrolle – hat sie aber tatsächlich nicht.
+Er steuert nur in einem Rahmen, den du zulässt.
+
+### L. Hecht
+
+Dieses Bewusstmachen finde ich einen
+spannenden gestalterischen Ansatz : dass das Leseverständnis
+nicht zu hundert Prozent auf eigenen Entscheidungen des /der
+Leser: in basiert.
+
+### G. Forster
+
+Genau. Der Risikopunkt ist : Wenn es dem /
+der Leser: in mehrfach passiert, dass er bei einem Inhalt landet,
+der nicht passt, verliert er /sie das Vertrauen und macht die Seite
+vermutlich nie wieder auf. Das ist eine Riesenverantwortung.
+
+Ich möchte dir ein Beispiel zum Zeilenabstand zeigen. Ich erhöhe
+den Zeilenabstand eines Textes – nur von einzeilig auf
+eineinhalb. Den eineinhalbzeiligen Text lese ich wesentlich
+leichter, obwohl es genau derselbe Text ist. Wenn ich es übertreibe
+– zum Beispiel vierzeilig –, dann wird er wieder schwerer
+lesbar. Da kommt es auf die Balance an.
+
+### L. Hecht
+
+Aus dem Editorial Design kenne ich : Ein hoher
+Zeilenabstand wird nicht immer als ästhetisch bewertet. Wie
+siehst du den Zusammenhang zwischen Ästhetik und Funktionalität
+?
+
+### G. Forster
+
+Es kommt darauf an, was man schön findet.
+Grundsätzlich gilt : Eineinhalb ist der ideale Zeilenabstand – auf
+Papier wie auf dem Bildschirm. Bei kurzen Texten merkt man
+den Unterschied weniger, aber wenn du acht Seiten einzeilig
+liest gegenüber acht Seiten mit eineinhalb, entsteht ein viel höherer
+Erschöpfungsgrad.
+
+Das Gleiche gilt für Spalten. Einen Text lese ich in zwei Spalten
+auf DIN A4 wesentlich leichter als in voller Breite. Bei drei Spalten
+kann es schon wieder schwieriger werden, bei vier Spalten
+zerstöre ich meist den Textfluss. Es kommt auch auf Training
+an: Wer auf eine bestimmte Textbreite trainiert ist, liest sie mit
+einer Fixierung nach unten – ohne Zeilensprünge. Andere lesen
+Wort für Wort und brauchen schmalere Spalten.
+
+### L. Hecht
+
+Da geht es dann um eine individualisierte
+Möglichkeit der Anpassung der Spaltenbreite.
+
+### G. Forster
+
+Richtig. Was Menschen idealerweise anpassen
+können sollten : Schriftgrösse, Schriftart, Zeilenabstand
+und Textbreite. Nicht mehr als vier bis fünf Einstellungsmöglichkeiten,
+damit der /die Leser: in nicht zu viel Zeit mit Formatieren
+verbringt. Hauptfokus : Zeilenabstand, Textbreite und
+Schriftgrösse.
+
+### L. Hecht
+
+Beim Aufzoomen von Texten – wenn man
+die Schriftgrösse erhöht – kommt es in herkömmlichen Anwendungen
+oft zu unschönen Darstellungen und Umbrüchen.
+
+### G. Forster
+
+Das passiert, wenn es mit erzwungenen Zeilenwechseln
+programmiert wurde. Wenn es gut programmiert
+ist, hast du keine unschönen Umbrüche. Wenn du schnell genug
+liest, stört auch ein starker Flattersatz nicht mehr – weil er einfach
+nicht mehr wahrgenommen wird. Dein Hirn ist komplett
+auf den Inhalt fokussiert und kümmert sich nicht mehr um dieses
+Detail.
+
+Die Leute, für die du gestaltest, kennen die gestalterischen Details
+in der Regel nicht. Beim Blocksatz gilt : Zu grosse Abstände
+zwischen den Wörtern verschlechtern die Wahrnehmung. Deswegen
+ist ein gut gesetzter Flattersatz mit homogenen Wortabständen
+leichter zu lesen. Auch Daimler hat das gelernt :
+Zuerst hatten sie enge, einzeilige Texte in ihren Hochglanzprospekten,
+heute gibt es Flattersatz und größere Zeilenabstände.
+
+Kennst du den Kennedy-Effekt ? Wenn etwas stark emotional
+anspricht – positiv oder negativ –, geht die Information beim
+ersten Erleben ins Langzeitgedächtnis und du hast sie ein Leben
+lang, sofern nicht schon etwas Gegenteiliges abgelegt ist.
+Wenn es gelingt, einen Effekt zu erzeugen, der emotional stark
+anspricht, und mit dem Inhalt verknüpft ist, ist das Behalten des
+Inhalts gesichert. Jedoch ist das sehr schwer. Deswegen setzt
+Werbung lieber auf Wiederholung.
+
+### L. Hecht
+
+Unterstützt visuelle Dynamik die Aufmerksamkeit,
+oder hemmt sie die kognitive Fähigkeit ?
+
+### G. Forster
+
+Sie unterstützt sie – wenn sie den Inhalt unterstützt.
+Ich kann aber auch die paradoxe Intervention nutzen
+und etwas tun, das überhaupt nicht passt, damit der Mensch drüber
+nachdenkt. « Geiz ist geil » von Saturn ist ein klassisches Beispiel
+: Zwei negativ konnotierte Wörter als Werbespruch – und
+diese Kampagne lief jahrelang. Entweder passt der Effekt genau
+zum Inhalt, oder du machst bewusst etwas völlig Unpassendes
+oder Unerwartetes. Irgendetwas Verwässertes dazwischen zieht
+nicht.
+
+### L. Hecht
+
+Und wenn man dann die Aufmerksamkeit
+des /der Leser: in hat, muss man es schaffen, ihn /sie dabei zu halten.
+
+### G. Forster
+
+Genau. Durch den sogenannten paradoxen
+Eye-Catcher hast du die Aufmerksamkeit – und jetzt kommt es
+auf den nächsten Schritt an. Viele machen den Eye-Catcher und
+gehen dann ohne Überleitung rein ins Thema. Das ist nicht ideal.
+Man sollte vom Eye-Catcher zum Thema überleiten, damit er
+plötzlich Sinn macht. Der Effekt hat nur einen kurzzeitigen
+Moment, um die Aufmerksamkeit dorthin zu leiten, wo man sie
+haben möchte. Dann brauchst du etwas anderes, das zum Thema
+hinleitet. Wenn du Effekt nach Effekt nach Effekt einfügst, bist
+du ganz schnell weg vom Thema.
+
+Die Nespresso-Spots mit George Clooney sind die besten Beispiele,
+die ich kenne, wie man es machen sollte : Kein Mensch
+käme auf die Idee, George Clooney mit einer anderen Kaffeemarke
+zu verbinden. Perfekte Balance zwischen Aufmerksamkeit
+erhalten, Aufmerksamkeit halten, Verbindung mit dem Produkt
+schaffen und Botschaft rüberbringen.
+
+Aufmerksamkeit und Textverständnis sind zwei verschiedene
+Dinge. Aufmerksamkeit ist ein Wahrnehmungszustand, Textverständnis
+ein kognitiver. Du kannst noch so aufmerksam einen
+medizinischen Fachtext lesen – wenn du die Wörter nicht verstehst,
+hilft dir die Aufmerksamkeit erst einmal nicht viel.
+
+### L. Hecht
+
+Können die interaktiven Möglichkeiten auf
+digitaler Hardware das Textverständnis erhöhen ?
+
+### G. Forster
+
+Ja – wenn die Interaktion klar definiert und
+intuitiv ist. Wenn du erst herumprobieren musst, um zu verstehen,
+wie es funktioniert, bist du weg vom Text. Die Interaktion
+muss so selbstverständlich sein, dass du dich gar nicht damit
+beschäftigen musst, sondern sie einfach ausführst. Dann erhöht
+sie das Textverständnis, weil sie nicht ablenkt.
+
+### L. Hecht
+
+Ist effizientes Lesen immer gleichbedeutend
+mit möglichst geringer Ablenkung ?
+
+### G. Forster
+
+Wenn die Ablenkung mit dem Inhalt zu tun
+hat – zum Beispiel eine passende Abbildung –, dann nicht. Ablenkung
+ist nicht grundsätzlich negativ. Es fragt sich : Dient die
+Ablenkung dem Inhalt oder lenkt sie davon ab ? Die Geschwindigkeit
+ist der entscheidende Faktor : Dein Gehirn muss den
+Text als interessant genug einordnen, damit es dabeibleibt. Das
+erreichst du durch Erhöhung der Lesegeschwindigkeit auf das
+individuelle Optimalniveau.
+
+### L. Hecht
+
+Ab wann wird Bewegung beim Lesen störend ?
+
+### G. Forster
+
+Ab dem Moment, wo sie wahrgenommen
+wird und als nicht hundertprozentig sicher eingestuft wird.
+Auch die Art der Bewegung spielt eine Rolle : Welche Bilder
+werden erzeugt ? Sind es beruhigende oder bedrohliche Bilder ?
+Bewegung hat immer einen Einfluss auf das Lesen, wenn sie wahrgenommen wird. Störend wird sie spätestens dann, wenn
+das Sicherheitsbedürfnis nicht erfüllt ist.
+
+### L. Hecht
+
+Wie beurteilst du RSVP-Systeme im Hinblick
+auf nachhaltiges Textverständnis ?
+
+### G. Forster
+
+Ich würde das nur für sehr kurze Botschaften
+einsetzen – einen einzelnen Satz, maximal 20 Sekunden. Für
+nachhaltiges Textverständnis ist es nicht geeignet.
+
+### L. Hecht
+
+Wie wichtig ist es, beim Lesen jederzeit einen
+Überblick über den Gesamttext zu haben ? Gerade im Bewegtformat
+ist dieser Überblick nicht immer möglich.
+
+### G. Forster
+
+Das hängt vom Inhalt ab. Wenn das Bisherige
+als Voraussetzung für das Weitere nötig ist, dann ist es
+wichtig. Wenn es modulare Bestandteile sind, die für sich stehen
+können, dann nicht. Was generell gilt : Eine Möglichkeit, zurückzuspringen,
+sollte immer vorhanden sein – auch wenn sie selten
+genutzt wird. Allein das Wissen, dass man im Text zurückgehen
+kann, erzeugt ein Kontrollgefühl.
+
+### L. Hecht
+
+Das bringt mich nun zum letzten Punkt in
+diesem Interview: Überschriften erzeugen Aufmerksamkeit
+durch ganz andere Mittel als ein Lesetext. Wenn man das dem /
+der Betrachter: in bewusst macht – « du liest jetzt gerade nur
+eine Überschrift, und das hat einen bestimmten gestalterischen
+Zweck » –, dann animiert man zum Reflektieren über das eigene
+Leseverhalten.
+
+### G. Forster
+
+Und das erreichst du am besten über Vergleiche.
+Der Mensch braucht immer einen Vergleich, um etwas einordnen
+zu können. Ohne Vergleich kannst du nicht einordnen.
+Wenn du möchtest, dass jemand reflektiert, brauchst du einen
+Vergleich. Er muss über sich selbst reflektieren, nicht über dich.
+Du kannst nur ein Angebot machen beim Reflektieren. Was rauskommt,
+hängt von seiner Wahrnehmung und Erfahrung ab.
+
+Das Interview wurde am 03. 03. 2026 geführt,
+aufgezeichnet und im Anschluss transkribiert. Aus Gründen
+der Lesbarkeit wurde es redaktionell gekürzt und sprachlich
+geglättet.
+
+## Interview mit einer Fachperson für Grafikdesign und Typografie
+
+Das Interview wurde im Rahmen dieser Bachelorarbeit
+mit einer Fachperson geführt, die seit mehreren
+Jahren in der gestalterischen Praxis tätig ist und deren Arbeit
+typografische Systeme, Editorial Design und digitale Anwendungen
+umfasst. Die interviewte Person hat einer Nennung ihres
+Namens nicht zugestimmt. Daher wird auf eine Wiedergabe des
+Transkripts in dieser Arbeit verzichtet. Das vollständige Transkript
+liegt dem Autor vor und kann auf begründete Anfrage
+eingesehen werden.
+
+Das Interview wurde am 12.03.2026 geführt,
+aufgezeichnet und im Anschluss transkribiert. Aus Gründen
+der Lesbarkeit wurde es redaktionell gekürzt und sprachlich
+geglättet.
+
+<span id="84"></span>
+## 8.4 Hilfsmittelverzeichnis
+
+ChatGPT ( Version 5. 4 ). OpenAI. https://chatgpt.com. [ Unterstützung
+bei der stilistischen Überarbeitung von Texten ]
+
+Claude ( Version Sonnet 4. 6 ). Anthropic : https://claude.ai. [ Unterstützung
+bei der stilistischen Überarbeitung von Texten ]
+
+DeepL ( Version Web ). DeepL SE. https://deepl.com. [ Verwendung
+zur Übersetzung fremdsprachiger Quellen ]
+
+Grammarly ( Version 1. 157. 1. 0 ). Grammarly Inc. https://grammarly.
+com [ Verwendung zur Rechtschreib- und Grammatikprüfung ]
+
+<span id="85"></span>
+## 8.5 Glossar
+
+**Adaptiv** Fähigkeit eines Systems, sich selbstständig an veränderte Bedingungen
+oder Nutzerbedürfnisse anzupassen
+
+**Analogous Motion** Bewegungen, die an menschliche Gesten erinnern wie Laufen,
+Zittern oder Atmen
+
+**Bewusste Regression** Das gezielte Zurückgehen zu einem schwer verständlichen Satz
+oder einem wichtigen Begriff
+
+**Chunking** Bündelung einzelner Informationen zu sinnvollen Einheiten
+
+**Clustering** Visuelle Gruppierung zusammengehöriger Inhalte
+
+**Diffuse Aufmerksamkeit** Reaktiver Aufmerksamkeitsmodus, bei dem mehr parallele Information
+verarbeitet wird, die Ablenkbarkeit jedoch höher ist
+
+**Eye-Catcher** Auffälliges Element, das dazu dient, die visuelle Aufmerksamkeit
+einer Person sofort auf einen bestimmten Punkt zu lenken
+
+**Eye-Tracking** Methode zur Erfassung und Analyse von Augenbewegungen,
+unter anderem eingesetzt in der Leseforschung, UX-Forschung
+und Psychologie
+
+**Fixation** Kurzer Ruhezustand des Auges, in dem visuelle Information aufgenommen
+wird
+
+**Fokussierte Aufmerksamkeit** Gezielter Aufmerksamkeitsmodus, bei dem weniger Information
+verarbeitet, aber resistenter gegen Ablenkung reagiert wird
+
+**Kinetisch** Auf Bewegung beruhend ; in der Typografie : Schrift, die sich verändert
+oder bewegt
+
+**Kontextsensitiv** Eigenschaft eines Elements, das sein Verhalten oder seine Darstellung
+an den jeweiligen Kontext oder die Umgebungsbedingungen
+anpasst
+
+**Linear** Einem festen, geraden Verlauf folgend ; in der Textgestaltung :
+Inhalte, die in einer vorgegebenen Reihenfolge von Anfang bis
+Ende gelesen werden
+
+**Motion Proximity** Elemente oder Objekte, die sich räumlich nahe beieinander befinden
+und ähnliche Bewegungen ausführen, tendieren dazu, als
+zusammengehörige Gruppe wahrgenommen zu werden
+
+**Onomatopoetisch** Beschreibt Wörter, deren Klang das Geräusch oder den Laut
+nachahmt, den sie bezeichnen
+
+**Paradoxe Intervention** Stilmittel, das bewusst unpassend oder widersprüchlich wirkt
+und dadurch Nachdenken erzwingt
+
+**Peripher** Ausserhalb des Fokusbereichs der Augen
+
+**Physiologisch** Den natürlichen Lebensvorgängen entsprechend
+
+**Rauschen** Unerwünschte Störungen, Artefakte oder Unregelmässigkeiten,
+die den Lesefluss stören und nicht Teil der ursprünglichen Gestaltung
+sind
+
+**Regression** Zurückspringen der Augen auf bereits gelesene Textpassagen
+
+**Responsives Webdesign** Gestalterischer Ansatz, bei dem sich das Layout einer Website
+automatisch an Bildschirmgrösse, Auflösung und Endgerät
+( Desktop, Tablet, Smartphone ) anpasst
+
+**Rezipient:innen** Empfänger:in von Medieninhalten
+
+**Sakkade** Bewegung des Auges zwischen zwei Fixationen
+
+**Statisch** Unbewegt
+
+**Stop-Motion** Filmtechnik, bei der unbewegte Objekte fotografiert, leicht verändert
+und erneut fotografiert werden
+
+**Temporal** Zeitlich ; in der Typografie : Schrift, die sich über die Zeit verändert
+oder bewegt
+
+**Textfragmentierung** Aufteilen von Texten in kleinere Einheiten
+
+**Tonalität** Emotionale Haltung ( Tonlage ), wie ein Text formuliert ist, unabhängig
+vom eigentlichen Inhalt
+
+**Typesetting** Anordnen von Textzeichen für den Druck oder die digitale Darstellung,
+um Lesbarkeit und ästhetische Qualität zu gewährleisten
+
+**Variable Schriften** Modernes OpenType-Schriftformat, das eine gesamte Schriftfamilie,
+inklusive unendlich vieler Zwischenstufen von Strichstärke,
+Breite, Neigung und Stil, in einer einzigen, kompakten Datei
+vereint
+
+**Wortbilder** Visuell gespeicherte Schriftbilder bekannter Wörter, auf die das
+Gehirn beim Lesen automatisch zurückgreift
+
+**Zugänglichkeit** Eigenschaft von Informationen, Systemen oder Oberflächen, die
+für alle Nutzenden ohne grosse Barrieren erreichbar und nutzbar
+sind
 
 </section>
 
@@ -473,7 +1249,41 @@ Wir lernen in der Schule lesen, von der ersten bis zur vierten Klasse, und womit
 
 # 9. Eigenständigkeitserklärung
 
-*(Wird ergänzt)*
+Ich erkläre hiermit,
+
+dass ich sämtliche nicht von mir selbst stammenden Textstellen
+gemäss gängigen wissenschaftlichen Zitierregeln korrekt zitiert
+und die verwendeten Quellen gut sichtbar erwähnt habe ;
+
+dass ich in einem Verzeichnis alle verwendeten Hilfsmittel und
+KI - Assistenzsysteme, Chatbots wie z. B. ChatGPT, Übersetzungsund
+Paraphrasier-Tools oder Programmierapplikationen wie z.B.
+GitHub Copilot deklariert und ihre Verwendung bei den entsprechenden
+Textstellen angegeben habe ;
+
+dass ich sämtliche immateriellen Rechte an von mir allfällig verwendeten
+Materialien wie Bilder oder Grafiken erworben habe
+oder dass diese Materialien von mir selbst erstellt wurden ;
+
+dass das Thema, die Arbeit oder Teile davon nicht bei einem
+Leistungsnachweis eines anderen Moduls bereits verwendet wurden,
+sofern dies nicht ausdrücklich mit der Dozentin oder dem
+Dozenten im Voraus vereinbart wurde und in der Arbeit ausgewiesen
+wird ;
+
+dass ich mir bewusst bin, dass meine Arbeit auf Plagiate und
+auf Drittautorschaft menschlichen oder technischen Ursprungs
+( künstliche Intelligenz ) überprüft werden kann ;
+
+dass ich mir bewusst bin, dass die Hochschule für Gestaltung
+und Kunst FHNW einen Verstoss gegen diese Eigenständigkeitserklärung
+bzw. die ihr zugrundeliegenden Pflichten der Studien- und
+Prüfungsordnung der Hochschule für Gestaltung und Kunst FHNW
+verfolgt. Zu den Pflichten gehört insbesondere die Wahrung von
+Urheberrechten und das Unterlassen von Plagiaten ( StuPO § 10
+Abs. 1 d. und Abs. 6 ). Ein diesbezüglicher Verstoss wird mit der
+Note 1 bewertet. Zusätzlich können daraus disziplinarische Folgen
+( Verweis / Ausschluss aus dem Studiengang ) resultieren.
 
 </section>
 

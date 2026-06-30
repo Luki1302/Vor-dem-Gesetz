@@ -1,7 +1,7 @@
 <script setup>
 const { mode } = useTheme()
 useHead({
-  htmlAttrs: computed(() => ({ 'data-theme': mode.value, lang: 'de' }))
+  htmlAttrs: computed(() => ({ 'data-theme': mode.value, lang: 'de' })),
 })
 </script>
 
@@ -10,17 +10,10 @@ useHead({
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <ImageLightbox />
     <AppCursor />
   </div>
   <div class="mobile-notice">
-    <h1 class="mobile-notice-title">
-      <span>Vor dem</span>
-      <span>Gesetz</span>
-    </h1>
-    <div class="mobile-notice-body">
-      <p class="mobile-notice-right">ist nur für die</p>
-      <p>Desktop-Ansicht</p>
-      <p>geeignet.</p>
-    </div>
+    <p>«Vor dem Gesetz» ist nur für die Desktop-Ansicht geeignet.</p>
   </div>
 </template>

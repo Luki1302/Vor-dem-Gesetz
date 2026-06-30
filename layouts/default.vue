@@ -7,12 +7,17 @@ const pageTitle = computed(() => {
   if (path.includes('kulturgeschichtlich')) return 'Kulturgeschichtliche Thesis'
   return ''
 })
+
+onMounted(() => { window.__setCursorMode?.('full') })
+
+function setCursorLeft() { window.__setCursorMode?.('left-half') }
+function setCursorFull() { window.__setCursorMode?.('full') }
 </script>
 
 <template>
   <div>
     <header class="topbar">
-      <NuxtLink to="/" class="topbar-back" title="Zurück">
+      <NuxtLink to="/" class="topbar-back" title="Zurück" @mouseenter="setCursorLeft" @mouseleave="setCursorFull" @click="setCursorFull">
         <span class="back-diamond"></span>
       </NuxtLink>
 

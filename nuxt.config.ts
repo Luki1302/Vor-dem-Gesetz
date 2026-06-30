@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   devServer: {
     port: 3002,
+    host: '0.0.0.0',
   },
   vite: {
     server: {
@@ -20,6 +21,12 @@ export default defineNuxtConfig({
 
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' },
+    head: {
+      title: 'Vor dem Gesetz',
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      ],
+    },
   },
 
   devtools: { enabled: true },

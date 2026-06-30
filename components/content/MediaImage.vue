@@ -32,7 +32,7 @@ const currentSrc = computed(() => {
       :data-dark="dark || undefined"
       :data-light="dark ? src : undefined"
       :alt="alt"
-      :class="size === 'voll' ? 'w-full' : size === 'xs' ? 'img-xs' : size === 'mini' ? 'img-mini' : size === 'klein' ? 'img-klein' : size === 'halb' || size === 'hoch' ? 'w-1/2' : 'img-quer'"
+      :class="size === 'voll' || size === 'full' ? 'w-full' : size === 'xs' ? 'img-xs' : size === 'mini' ? 'img-mini' : size === 'klein' ? 'img-klein' : size === 'halb' || size === 'hoch' ? 'w-1/2' : 'img-quer'"
       loading="lazy"
     />
     <figcaption v-if="caption">{{ caption }}</figcaption>
