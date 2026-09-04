@@ -330,14 +330,14 @@ function initNavigation() {
   })
 }
 
-function navigateTo(href) {
+function navigateTo(href, fadeMs = 300) {
   const wrap = document.querySelector('.desktop-content')
   if (wrap) {
-    wrap.style.transition = 'opacity 0.3s ease'
+    wrap.style.transition = `opacity ${fadeMs}ms ease`
     wrap.style.opacity = '0'
     setTimeout(() => {
       location.href = href
-    }, 300)
+    }, fadeMs)
   } else {
     location.href = href
   }
@@ -364,9 +364,15 @@ function initScrollRestore() {
 function initEnterFade() {
   const wrap = document.querySelector('.desktop-content')
   if (!wrap) return
+  // Kam der Aufruf aus dem Leerlauf, mit derselben langen Blende einblenden,
+  // mit der ausgeblendet wurde. Das Flag räumt gestalterisch.js weg.
+  let fadeMs = 300
+  try {
+    if (sessionStorage.getItem(IDLE_FLAG) === '1') fadeMs = IDLE_FADE_MS
+  } catch (e) {}
   wrap.style.opacity = '0'
   requestAnimationFrame(() => {
-    wrap.style.transition = 'opacity 0.3s ease'
+    wrap.style.transition = `opacity ${fadeMs}ms ease`
     wrap.style.opacity = '1'
   })
 }
@@ -383,6 +389,9 @@ function initEnterFade() {
 const IDLE_MS = 40000
 const IDLE_PATH = '/gestalterisch'
 const IDLE_FLAG = 'idleToVideo'
+// Bewusst deutlich länger als die 300 ms der normalen Navigation: der Wechsel
+// passiert unbeobachtet und soll ruhig wirken, nicht wie ein Sprung.
+const IDLE_FADE_MS = 900
 
 let idleTimer = null
 let idleRunning = false
@@ -391,24 +400,27 @@ function onIdlePath() {
   return location.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '') === IDLE_PATH
 }
 
-// Blendet den Inhalt aus, führt fn aus und blendet wieder ein – identische
-// Dauer/Kurve wie der Seitenwechsel, damit sich beides gleich anfühlt.
+// Blendet den Inhalt aus, springt verdeckt zur Zielposition und blendet wieder
+// ein. Der Sprung selbst bleibt hart – ein sichtbares Scrollen über mehrere
+// tausend Pixel wäre unruhiger als die Blende.
 function fadeSwap(fn) {
   const wrap = document.querySelector('.desktop-content')
   if (!wrap) {
     fn()
     return
   }
-  wrap.style.transition = 'opacity 0.3s ease'
+  wrap.style.transition = `opacity ${IDLE_FADE_MS}ms ease`
   wrap.style.opacity = '0'
   setTimeout(() => {
     fn()
     requestAnimationFrame(() => {
       wrap.style.opacity = '1'
-      idleRunning = false
-      resetIdleTimer()
+      setTimeout(() => {
+        idleRunning = false
+        resetIdleTimer()
+      }, IDLE_FADE_MS)
     })
-  }, 300)
+  }, IDLE_FADE_MS)
 }
 
 function runIdleAttract() {
@@ -433,7 +445,7 @@ function runIdleAttract() {
   try {
     sessionStorage.setItem(IDLE_FLAG, '1')
   } catch (e) {}
-  navigateTo(IDLE_PATH)
+  navigateTo(IDLE_PATH, IDLE_FADE_MS)
 }
 
 function resetIdleTimer() {

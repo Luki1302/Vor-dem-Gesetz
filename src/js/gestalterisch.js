@@ -17,9 +17,15 @@ let hero = null
 let heroRatio = 0
 let heroInView = false
 let lightboxOpen = false
-let soundArmed = false
+let soundCheckTimer = null
 
 // ── HERO-VIDEO ───────────────────────────────────────────────────────────────
+
+function playMuted() {
+  if (!hero) return
+  hero.muted = true
+  hero.play().catch(() => {})
+}
 
 function playHero(wantSound) {
   if (!hero) return
@@ -27,29 +33,38 @@ function playHero(wantSound) {
   hero.muted = !wantSound
   const played = hero.play()
   if (played && typeof played.catch === 'function') {
-    played.catch(() => {
-      if (hero.muted) return
-      // Ton-Autoplay ohne vorherige Interaktion ist in den meisten Browsern
-      // gesperrt. Also stumm weiterlaufen lassen und beim ersten Klick oder
-      // Tastendruck nachträglich entstummen.
-      hero.muted = true
-      hero.play().catch(() => {})
-      armSoundOnGesture()
-    })
+    // Ton-Autoplay ohne vorherige Interaktion ist in den meisten Browsern
+    // gesperrt – dann stumm weiterlaufen lassen statt gar nicht.
+    played.catch(() => playMuted())
+  }
+  if (wantSound) {
+    // Chrome lehnt das Entstummen nicht immer über die Promise ab, sondern
+    // pausiert das laufende Video still. Kurz nachfassen und in dem Fall
+    // ebenfalls auf stumm zurückgehen.
+    clearTimeout(soundCheckTimer)
+    soundCheckTimer = setTimeout(() => {
+      if (hero && !hero.muted && hero.paused && heroInView && !lightboxOpen) playMuted()
+    }, 300)
   }
 }
 
-function armSoundOnGesture() {
-  if (soundArmed) return
-  soundArmed = true
+// Soll das Video gerade mit Ton laufen?
+function shouldHaveSound() {
+  return heroInView && !lightboxOpen && heroRatio >= SOUND_RATIO
+}
+
+// Dauerhafte Nachbesserung: Jede echte Interaktion gilt dem Browser als
+// Freigabe für Ton. Sobald eine kommt und das Video stumm läuft, obwohl es
+// klingen sollte, wird nachträglich entstummt. Die Listener bleiben liegen,
+// damit das auch nach einem Idle-Wechsel oder Reload wieder greift.
+function initSoundRecovery() {
   const onGesture = () => {
-    window.removeEventListener('pointerdown', onGesture)
-    window.removeEventListener('keydown', onGesture)
-    soundArmed = false
-    if (heroInView && !lightboxOpen && heroRatio >= SOUND_RATIO) playHero(true)
+    if (!hero || !shouldHaveSound() || !hero.muted) return
+    playHero(true)
   }
-  window.addEventListener('pointerdown', onGesture)
-  window.addEventListener('keydown', onGesture)
+  ;['pointerdown', 'mousedown', 'click', 'keydown', 'touchstart', 'wheel'].forEach((ev) =>
+    window.addEventListener(ev, onGesture, { passive: true }),
+  )
 }
 
 function initHero() {
@@ -153,6 +168,7 @@ function initLightbox() {
 function init() {
   initHero()
   initLightbox()
+  initSoundRecovery()
 
   window.__gestaltCenterVideo = centerHero
   window.__gestaltVideoCentered = heroIsCentered

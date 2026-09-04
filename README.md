@@ -66,17 +66,33 @@ der Lightbox fordert nur diese Seite an – `window.__openLightbox(items, index,
 { sound: true })`. Ohne diese Option bleiben alle anderen Seiten stumm wie
 bisher.
 
-Browser blockieren Autoplay mit Ton ohne vorherige Interaktion. Trifft das zu,
-startet das Video stumm und wird beim ersten Klick oder Tastendruck
-nachträglich entstummt. In Chrome lässt sich das für einen Kiosk-Betrieb mit
-`--autoplay-policy=no-user-gesture-required` abschalten.
+Browser blockieren Autoplay mit Ton, solange auf der Seite noch nichts
+angeklickt wurde – das gilt auch nach jedem Reload. Die Seite versucht es
+deshalb bei jedem Laden zuerst mit Ton und fällt nur auf stumm zurück, wenn der
+Browser ablehnt. Danach horcht sie dauerhaft auf echte Eingaben (Klick, Taste,
+Scrollrad, Touch): Die erste davon schaltet den Ton nach. Diese Listener bleiben
+liegen, damit der Ton auch nach einem Leerlauf-Wechsel wieder zurückkommt.
+
+Für den Ausstellungsbetrieb lässt sich die Sperre ganz abschalten, dann klingt
+das Video sofort ab dem Laden:
+
+```bash
+open -a "Google Chrome" --args --autoplay-policy=no-user-gesture-required
+```
 
 Nach 40 Sekunden ohne Eingabe (Maus, Tastatur, Scrollen, Touch) wechselt die
 Site zurück auf `/gestalterisch` und stellt das Video mittig in den Viewport –
-mit derselben Fade-Blende wie ein Seitenwechsel, nicht im Grossbildmodus. Steht
-das Video bereits mittig, passiert nichts, damit die Seite im Leerlauf nicht
-alle 40 Sekunden blinkt. Die Werte stehen als `IDLE_MS` / `IDLE_PATH` oben im
-Abschnitt «IDLE-ATTRACT» von `src/js/app.js`.
+nicht im Grossbildmodus. Die Blende dauert dabei bewusst 900 ms statt der
+300 ms eines normalen Seitenwechsels, aus- wie einblendend, damit der Wechsel
+ruhig wirkt. Der Scroll-Sprung selbst passiert verdeckt hinter der Blende;
+sichtbares Scrollen über mehrere tausend Pixel wäre unruhiger. Steht das Video
+bereits mittig, passiert nichts, damit die Seite im Leerlauf nicht alle
+40 Sekunden blinkt. Wechselt sie von einer anderen Seite her, lädt die Zielseite
+neu – der Ton ist dann wieder von der Autoplay-Sperre betroffen. Bleibt sie auf
+`/gestalterisch`, läuft der Ton durch.
+
+Die Werte stehen als `IDLE_MS`, `IDLE_FADE_MS` und `IDLE_PATH` oben im Abschnitt
+«IDLE-ATTRACT» von `src/js/app.js`.
 
 ## Behobene Punkte gegenüber der Vue-Version
 
