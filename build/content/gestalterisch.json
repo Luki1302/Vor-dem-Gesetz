@@ -1,0 +1,21 @@
+{
+  "title": "Gestalterische Thesis",
+  "_comment": "Reine Medienseite: ein Hero-Video über die volle Breite, darunter zwei unabhängige Bildspalten. `col` bestimmt die Spalte (1 = links, 2 = rechts), die Reihenfolge in `items` ist die Lesereihenfolge (auch für die Lightbox).",
+  "hero": {
+    "src": "/assets/gestalterisch/gestalterisch-1.mp4",
+    "w": 1920,
+    "h": 1080
+  },
+  "items": [
+    { "src": "/assets/gestalterisch/gestalterisch-2.avif",  "w": 1920, "h": 1280, "col": 1 },
+    { "src": "/assets/gestalterisch/gestalterisch-4.avif",  "w": 1280, "h": 1920, "col": 2 },
+    { "src": "/assets/gestalterisch/gestalterisch-6.avif",  "w": 1280, "h": 1920, "col": 1 },
+    { "src": "/assets/gestalterisch/gestalterisch-7.avif",  "w": 1920, "h": 1280, "col": 2 },
+    { "src": "/assets/gestalterisch/gestalterisch-5.avif",  "w": 1920, "h": 1080, "col": 1 },
+    { "src": "/assets/gestalterisch/gestalterisch-9.avif",  "w": 1280, "h": 1920, "col": 2 },
+    { "src": "/assets/gestalterisch/gestalterisch-8.avif",  "w": 1920, "h": 1080, "col": 1 },
+    { "src": "/assets/gestalterisch/gestalterisch-11.avif", "w": 1280, "h": 1920, "col": 1 },
+    { "src": "/assets/gestalterisch/gestalterisch-10.avif", "w": 1920, "h": 1280, "col": 2 },
+    { "src": "/assets/gestalterisch/gestalterisch-3.avif",  "w": 1920, "h": 1280, "col": 2 }
+  ]
+}

@@ -102,6 +102,9 @@ function initLightbox() {
   let currentIndex = 0
   let mediaSize = null
   let overlayEl = null
+  // Ton nur, wenn der Aufrufer ihn ausdrücklich anfordert (open(..., { sound: true })).
+  // Die Medien der Prozess-/Thesis-Seiten bleiben dadurch unverändert stumm.
+  let soundOn = false
 
   function computeSize(naturalW, naturalH) {
     if (!naturalW || !naturalH) return null
@@ -143,7 +146,7 @@ function initLightbox() {
       media.className = 'lightbox-media' + (mediaSize ? '' : ' measuring')
       media.autoplay = true
       media.loop = true
-      media.muted = true
+      media.muted = !soundOn
       media.playsInline = true
       media.addEventListener('loadedmetadata', onMediaLoad)
     }
@@ -167,21 +170,39 @@ function initLightbox() {
     rootHost.innerHTML = ''
     rootHost.appendChild(overlay)
     overlayEl = overlay
+
+    if (soundOn && media && media.tagName === 'VIDEO') {
+      // Die Lightbox öffnet immer aus einem Klick heraus, Ton-Autoplay ist
+      // daher normalerweise erlaubt. Falls der Browser trotzdem blockt,
+      // läuft das Video stumm weiter statt gar nicht.
+      const played = media.play()
+      if (played && typeof played.catch === 'function') {
+        played.catch(() => {
+          media.muted = true
+          media.play().catch(() => {})
+        })
+      }
+    }
   }
 
-  function open(mediaItems, startIndex = 0) {
+  function open(mediaItems, startIndex = 0, opts = {}) {
     items = mediaItems
     currentIndex = startIndex
     mediaSize = null
+    soundOn = opts.sound === true
     visible = true
     document.body.style.overflow = 'hidden'
     render()
+    window.dispatchEvent(new CustomEvent('lightbox:open'))
   }
   function close() {
+    if (!visible) return
     visible = false
+    soundOn = false
     document.body.style.overflow = ''
     window.__setCursorMode?.('full')
     render()
+    window.dispatchEvent(new CustomEvent('lightbox:close'))
   }
   function next() {
     currentIndex = (currentIndex + 1) % items.length
@@ -253,6 +274,8 @@ function initLightbox() {
   }
 
   window.__openLightbox = open
+  window.__closeLightbox = close
+  window.__lightboxOpen = () => visible
   window.addEventListener('keydown', onKeydown)
   window.addEventListener('mousemove', onMouseMove, { passive: true })
   window.addEventListener('resize', onResize, { passive: true })
@@ -348,6 +371,86 @@ function initEnterFade() {
   })
 }
 
+// ── IDLE-ATTRACT ─────────────────────────────────────────────────────────────
+// Nach 40 s ohne Eingabe kehrt die Site zum Video der gestalterischen Thesis
+// zurück – nicht im Grossbildmodus, sondern zentriert auf der normalen Seite.
+// Der Wechsel nutzt dieselbe Fade-Blende wie die Navigation.
+//
+// Die Seite selbst meldet sich dafür über zwei Hooks an:
+//   window.__gestaltCenterVideo()   scrollt das Video mittig in den Viewport
+//   window.__gestaltVideoCentered() true, wenn es dort bereits steht
+
+const IDLE_MS = 40000
+const IDLE_PATH = '/gestalterisch'
+const IDLE_FLAG = 'idleToVideo'
+
+let idleTimer = null
+let idleRunning = false
+
+function onIdlePath() {
+  return location.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '') === IDLE_PATH
+}
+
+// Blendet den Inhalt aus, führt fn aus und blendet wieder ein – identische
+// Dauer/Kurve wie der Seitenwechsel, damit sich beides gleich anfühlt.
+function fadeSwap(fn) {
+  const wrap = document.querySelector('.desktop-content')
+  if (!wrap) {
+    fn()
+    return
+  }
+  wrap.style.transition = 'opacity 0.3s ease'
+  wrap.style.opacity = '0'
+  setTimeout(() => {
+    fn()
+    requestAnimationFrame(() => {
+      wrap.style.opacity = '1'
+      idleRunning = false
+      resetIdleTimer()
+    })
+  }, 300)
+}
+
+function runIdleAttract() {
+  if (idleRunning) return
+  idleRunning = true
+
+  const wasOpen = window.__lightboxOpen?.() === true
+  if (wasOpen) window.__closeLightbox?.()
+
+  if (onIdlePath() && window.__gestaltCenterVideo) {
+    // Steht das Video schon mittig und war die Lightbox zu, ist nichts zu tun –
+    // sonst würde die Seite im Leerlauf alle 40 s grundlos blinken.
+    if (!wasOpen && window.__gestaltVideoCentered?.() === true) {
+      idleRunning = false
+      resetIdleTimer()
+      return
+    }
+    fadeSwap(() => window.__gestaltCenterVideo())
+    return
+  }
+
+  try {
+    sessionStorage.setItem(IDLE_FLAG, '1')
+  } catch (e) {}
+  navigateTo(IDLE_PATH)
+}
+
+function resetIdleTimer() {
+  clearTimeout(idleTimer)
+  idleTimer = setTimeout(runIdleAttract, IDLE_MS)
+}
+
+function initIdleAttract() {
+  const onActivity = () => {
+    if (!idleRunning) resetIdleTimer()
+  }
+  ;['mousemove', 'pointerdown', 'mousedown', 'keydown', 'wheel', 'touchstart', 'scroll'].forEach(
+    (ev) => window.addEventListener(ev, onActivity, { passive: true }),
+  )
+  resetIdleTimer()
+}
+
 // ── BOOT ─────────────────────────────────────────────────────────────────────
 
 function boot() {
@@ -357,6 +460,7 @@ function boot() {
   initNavigation()
   initScrollRestore()
   initEnterFade()
+  initIdleAttract()
   window.__setCursorMode?.('full')
 }
 

@@ -81,6 +81,15 @@ function homeContent() {
 <h3 class="start-block-label">Zielsetzung</h3>
 <p>Ziel der Arbeit ist es, die Bedingungen des Lesens im digitalen Raum zu untersuchen und die Rolle von Bewegung, Interaktion und Kontrolle im Leseprozess erfahrbar zu machen. Was die kulturgeschichtliche Thesis theoretisch herleitet, soll in der Installation körperlich als Erfahrung spürbar sein, die über das Lesen eines Textes hinausgeht.</p>
 </div>
+<a href="/gestalterisch" data-link class="start-nav" data-cursor-right>
+<div class="start-nav-cover">
+<video src="/assets/start/start-1.mp4" muted loop playsinline preload="none"></video>
+</div>
+<div class="start-nav-info">
+<h3 class="start-block-label">Gestalterische Thesis</h3>
+<p>Die Installation «Vor dem Gesetz» übersetzt Kafkas Erzählung in eine digitale Leseerfahrung. Die besuchende Person betritt einen Eingang und wird selbst zur Figur der Parabel. Sie steht vor einer Tür, die ihre Gestalt verändert. Anweisungen erscheinen darauf und verleihen dem Türhüter eine Stimme. Auf dem Smartphone in ihrer Hand entzieht sich der Text und wird erst durch Interaktion lesbar. Jede Geste löst eine Reaktion im Raum aus, doch der Zugang bleibt begrenzt.</p>
+</div>
+</a>
 <a href="/gestalterisch/prozess" data-link class="start-nav" data-cursor-right>
 <div class="start-nav-cover">
 <video src="/assets/start/start-2.mp4" muted loop playsinline preload="none"></video>
@@ -206,6 +215,56 @@ export function prozessPage(months) {
     title: 'Vor dem Gesetz',
     content,
     scripts: ['/js/app.js', '/js/prozess.js'],
+  })
+}
+
+// ── GESTALTERISCHE THESIS PAGE ──────────────────────────────────────────────
+// Reine Medienseite (kein Fliesstext, keine TOC): Hero-Video über die volle
+// Breite, darunter zwei unabhängige Bildspalten (Masonry-Anmutung). Quelle ist
+// build/content/gestalterisch.json.
+
+export function gestalterischPage(doc) {
+  const hero = doc.hero || {}
+  // Lesereihenfolge = Reihenfolge in `items`; der Hero steht davor. Diese
+  // Indizes steuern die Reihenfolge in der Lightbox.
+  const heroHtml = hero.src
+    ? `<div class="gestalt-hero"><video data-src="${hero.src}" width="${hero.w || ''}" height="${hero.h || ''}" loop muted playsinline preload="none" data-gallery-index="0"></video></div>`
+    : ''
+
+  const items = doc.items || []
+  const cols = [1, 2]
+    .map((colNr) => {
+      const inner = items
+        .map((item, i) => ({ item, i }))
+        .filter(({ item }) => (item.col || 1) === colNr)
+        .map(
+          ({ item, i }) =>
+            `<img src="${item.src}" alt="" width="${item.w || ''}" height="${item.h || ''}" loading="lazy" data-gallery-index="${i + 1}">`,
+        )
+        .join('')
+      return `<div class="gestalt-col">${inner}</div>`
+    })
+    .join('')
+
+  const content = `${topbar('Gestalterische Thesis')}
+<div>
+<div class="detail-header">
+<div class="detail-intro-meta">
+<p><strong>Mentorierende</strong><br>
+<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/marianna-helen-meyer" target="_blank">Marianna Helen Meyer</a><br>
+<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/jinsu-ahn" target="_blank">Jinsu Ahn</a><br></p>
+</div>
+</div>
+<div class="gestalt-gallery">
+${heroHtml}
+<div class="gestalt-cols">${cols}</div>
+</div>
+</div>`
+
+  return htmlShell({
+    title: 'Vor dem Gesetz',
+    content,
+    scripts: ['/js/app.js', '/js/gestalterisch.js'],
   })
 }
 

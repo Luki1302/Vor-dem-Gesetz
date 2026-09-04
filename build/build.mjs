@@ -12,7 +12,7 @@ import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
-import { homePage, prozessPage, kulturgeschichtlichPage } from './templates.mjs'
+import { homePage, prozessPage, gestalterischPage, kulturgeschichtlichPage } from './templates.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -63,6 +63,7 @@ const months = [
 ].map((m) => ({ ...m, doc: loadDoc(m.slug) }))
 
 writePage('index.html', homePage())
+writePage('gestalterisch/index.html', gestalterischPage(loadDoc('gestalterisch')))
 writePage('gestalterisch/prozess/index.html', prozessPage(months))
 writePage('kulturgeschichtlich/index.html', kulturgeschichtlichPage(loadDoc('kulturgeschichtlich')))
 

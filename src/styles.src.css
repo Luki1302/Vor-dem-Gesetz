@@ -1477,6 +1477,44 @@ body,
   opacity: 0;
 }
 
+/* ── GESTALTERISCHE THESIS – MEDIENSEITE ─────────────────────────────────── */
+/* Hero-Video über die volle Inhaltsbreite, darunter zwei unabhängige
+   Bildspalten. Die Spalten sind eigene Flex-Container, damit die Bilder nicht
+   zeilenweise aneinander ausgerichtet werden, sondern versetzt laufen. */
+
+.gestalt-gallery {
+  padding: 0 2rem 4rem 2rem;
+}
+
+.gestalt-hero {
+  margin-bottom: 0.4rem;
+}
+.gestalt-hero video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--c-hi);
+}
+
+.gestalt-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.4rem;
+  align-items: start;
+}
+
+.gestalt-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.gestalt-col img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1200px) {
   .start-subtitle-row {
     grid-template-columns: 1fr 1fr;
