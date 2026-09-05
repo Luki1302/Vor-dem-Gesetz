@@ -115,7 +115,7 @@ function homeContent() {
 <strong>Mentorierende</strong>
 <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/marianna-helen-meyer" target="_blank">Marianna Helen Meyer</a><br>
 <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/jinsu-ahn" target="_blank">Jinsu Ahn</a><br>
-<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/invar-torre-hollaus" target="_blank">Dr. Invar-Torre Hollaus</a><br>
+<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/invar-torre-hollaus" target="_blank">Invar-Torre Hollaus</a><br>
 <strong>Danke auch an</strong>
 <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/marion-fink" target="_blank">Prof. Marion Fink<br></a>
 <a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/philipp-stamm" target="_blank">Dr. Philipp Stamm<br></a>
@@ -316,7 +316,7 @@ export function kulturgeschichtlichPage(doc) {
 <div class="detail-intro-meta">
 <p><strong>Bewegtes Lesen</strong><br>Interaktive Typografie als Medium für Aufmerksamkeit und Textverständnis</p>
 <p><strong>Mentorierender</strong><br>
-<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/invar-torre-hollaus" target="_blank">Dr. Invar-Torre Hollaus</a></p>
+<a href="https://www.fhnw.ch/de/gestaltung-kunst/ueber-uns/portrait-organisation/personen/invar-torre-hollaus" target="_blank">Invar-Torre Hollaus</a></p>
 <p><strong>Download</strong><br>
 <a href="/assets/kulturgeschichtlich/Hecht_Lukas.pdf" download>PDF</a></p>
 </div>

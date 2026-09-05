@@ -228,9 +228,9 @@ Eye-Tracking wird normalerweise für Usertracking und die Optimierung von Benutz
 
 </section>
 
-## Zwischenfazit
-
 <section>
+
+## Zwischenfazit
 
 Der April war eine breite Erkundungsphase, in der viele gestalterische Richtungen ausprobiert und ein Überblick über die Möglichkeiten des Formats gewonnen wurden. Die Einschränkung auf Wikipedia-Artikel erwies sich dabei als Vorteil, da sie eine vollständige Konzentration auf die Gestaltung ermöglichte. Etwa die Hälfte der Zeit für die Arbeit an der gestalterischen Thesis war zu diesem Zeitpunkt vorbei. Ich hatte vieles ausprobiert, aber noch kein klares Bild von einem Produkt, das ich gestalten wollte.
 
