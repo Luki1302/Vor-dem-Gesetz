@@ -296,27 +296,12 @@ function initLightbox() {
   })
 }
 
-// ── NAVIGATION (fade transition + scroll restoration) ────────────────────────
+// ── NAVIGATION (fade transition) ────────────────────────
 // Replaces Nuxt's pageTransition (fade, out-in) and router.options
 // scrollBehavior. SPA-style fade between the three pages.
 
 function initNavigation() {
   if (!('fetch' in window)) return
-
-  // Save home scroll position before leaving home.
-  const isHome = location.pathname === '/' || location.pathname === '/index.html'
-  if (isHome) {
-    window.addEventListener(
-      'scroll',
-      () => {
-        window.__savedHomeScroll = window.scrollY
-        try {
-          sessionStorage.setItem('homeScroll', String(window.scrollY))
-        } catch (e) {}
-      },
-      { passive: true },
-    )
-  }
 
   document.querySelectorAll('a[data-link]').forEach((a) => {
     a.addEventListener('click', (e) => {
@@ -343,21 +328,13 @@ function navigateTo(href, fadeMs = 300) {
   }
 }
 
-// Restore home scroll when arriving back at home.
+// Always open pages at the top (no browser or saved scroll restoration).
 function initScrollRestore() {
-  const isHome = location.pathname === '/' || location.pathname === '/index.html'
-  if (!isHome) return
-  let scrollY = window.__savedHomeScroll
-  if (scrollY == null) {
-    try {
-      const s = sessionStorage.getItem('homeScroll')
-      if (s != null) scrollY = parseInt(s, 10)
-    } catch (e) {}
-  }
-  if (scrollY && performance.getEntriesByType('navigation')[0]?.type !== 'reload') {
-    // Match the original 50ms delayed restore.
-    setTimeout(() => window.scrollTo({ top: scrollY }), 50)
-  }
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+  try {
+    sessionStorage.removeItem('homeScroll')
+  } catch (e) {}
+  window.scrollTo(0, 0)
 }
 
 // Page-enter fade-in (mirror fade-enter transition).
