@@ -341,103 +341,11 @@ function initScrollRestore() {
 function initEnterFade() {
   const wrap = document.querySelector('.desktop-content')
   if (!wrap) return
-  // Kam der Aufruf aus dem Leerlauf, mit derselben langen Blende einblenden,
-  // mit der ausgeblendet wurde. Das Flag räumt gestalterisch.js weg.
-  let fadeMs = 300
-  try {
-    if (sessionStorage.getItem(IDLE_FLAG) === '1') fadeMs = IDLE_FADE_MS
-  } catch (e) {}
   wrap.style.opacity = '0'
   requestAnimationFrame(() => {
-    wrap.style.transition = `opacity ${fadeMs}ms ease`
+    wrap.style.transition = 'opacity 0.3s ease'
     wrap.style.opacity = '1'
   })
-}
-
-// ── IDLE-ATTRACT ─────────────────────────────────────────────────────────────
-// Nach 40 s ohne Eingabe kehrt die Site zum Video der gestalterischen Thesis
-// zurück – nicht im Grossbildmodus, sondern zentriert auf der normalen Seite.
-// Der Wechsel nutzt dieselbe Fade-Blende wie die Navigation.
-//
-// Die Seite selbst meldet sich dafür über zwei Hooks an:
-//   window.__gestaltCenterVideo()   scrollt das Video mittig in den Viewport
-//   window.__gestaltVideoCentered() true, wenn es dort bereits steht
-
-const IDLE_MS = 40000
-const IDLE_PATH = '/gestalterisch'
-const IDLE_FLAG = 'idleToVideo'
-// Bewusst deutlich länger als die 300 ms der normalen Navigation: der Wechsel
-// passiert unbeobachtet und soll ruhig wirken, nicht wie ein Sprung.
-const IDLE_FADE_MS = 900
-
-let idleTimer = null
-let idleRunning = false
-
-function onIdlePath() {
-  return location.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '') === IDLE_PATH
-}
-
-// Blendet den Inhalt aus, springt verdeckt zur Zielposition und blendet wieder
-// ein. Der Sprung selbst bleibt hart – ein sichtbares Scrollen über mehrere
-// tausend Pixel wäre unruhiger als die Blende.
-function fadeSwap(fn) {
-  const wrap = document.querySelector('.desktop-content')
-  if (!wrap) {
-    fn()
-    return
-  }
-  wrap.style.transition = `opacity ${IDLE_FADE_MS}ms ease`
-  wrap.style.opacity = '0'
-  setTimeout(() => {
-    fn()
-    requestAnimationFrame(() => {
-      wrap.style.opacity = '1'
-      setTimeout(() => {
-        idleRunning = false
-        resetIdleTimer()
-      }, IDLE_FADE_MS)
-    })
-  }, IDLE_FADE_MS)
-}
-
-function runIdleAttract() {
-  if (idleRunning) return
-  idleRunning = true
-
-  const wasOpen = window.__lightboxOpen?.() === true
-  if (wasOpen) window.__closeLightbox?.()
-
-  if (onIdlePath() && window.__gestaltCenterVideo) {
-    // Steht das Video schon mittig und war die Lightbox zu, ist nichts zu tun –
-    // sonst würde die Seite im Leerlauf alle 40 s grundlos blinken.
-    if (!wasOpen && window.__gestaltVideoCentered?.() === true) {
-      idleRunning = false
-      resetIdleTimer()
-      return
-    }
-    fadeSwap(() => window.__gestaltCenterVideo())
-    return
-  }
-
-  try {
-    sessionStorage.setItem(IDLE_FLAG, '1')
-  } catch (e) {}
-  navigateTo(IDLE_PATH, IDLE_FADE_MS)
-}
-
-function resetIdleTimer() {
-  clearTimeout(idleTimer)
-  idleTimer = setTimeout(runIdleAttract, IDLE_MS)
-}
-
-function initIdleAttract() {
-  const onActivity = () => {
-    if (!idleRunning) resetIdleTimer()
-  }
-  ;['mousemove', 'pointerdown', 'mousedown', 'keydown', 'wheel', 'touchstart', 'scroll'].forEach(
-    (ev) => window.addEventListener(ev, onActivity, { passive: true }),
-  )
-  resetIdleTimer()
 }
 
 // ── BOOT ─────────────────────────────────────────────────────────────────────
@@ -449,7 +357,6 @@ function boot() {
   initNavigation()
   initScrollRestore()
   initEnterFade()
-  initIdleAttract()
   window.__setCursorMode?.('full')
 }
 

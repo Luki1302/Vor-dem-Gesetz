@@ -28,12 +28,11 @@ content/*.md         Original-Markdown, als Referenz behalten (nicht im Build ve
 src/
   styles.src.css     Quelle für styles.css (Tailwind base/utilities + eigenes CSS)
   js/
-    app.js           Theme, Cursor, Lightbox, Navigation/Fade, Scroll-Restore,
-                     Idle-Attract (40 s)
+    app.js           Theme, Cursor, Lightbox, Navigation/Fade, Seiten starten oben
     index.js         Startseite: Wellen-Typografie + Nav-Videos
     prozess.js       Prozessseite: DOM-Restrukturierung + Hover-Medien
     kulturgeschichtlich.js  Kulturgeschichtliche Thesis: dito
-    gestalterisch.js Gestalterische Thesis: Video/Ton, Lightbox, Idle-Hooks
+    gestalterisch.js Gestalterische Thesis: Video/Ton, Lightbox
 public/              Assets, Fonts, favicon → wird nach dist/ kopiert
 dist/                Build-Ausgabe (statische Site, deploybar)
 vercel.json          Static-Deploy-Config (cleanUrls)
@@ -54,7 +53,7 @@ die volle Breite, `items` für die Bilder darunter. `col` bestimmt die Spalte
 zugleich die Reihenfolge in der Lightbox. `w`/`h` sind die Originalmasse und
 verhindern Layout-Sprünge beim Nachladen.
 
-## Ton und Idle-Modus
+## Ton
 
 Das Hero-Video der gestalterischen Thesis (`gestalterisch-1.mp4`) hat eine
 Tonspur und läuft mit Ton, solange es zu mindestens 50 % im Sichtfeld ist.
@@ -70,8 +69,7 @@ Browser blockieren Autoplay mit Ton, solange auf der Seite noch nichts
 angeklickt wurde – das gilt auch nach jedem Reload. Die Seite versucht es
 deshalb bei jedem Laden zuerst mit Ton und fällt nur auf stumm zurück, wenn der
 Browser ablehnt. Danach horcht sie dauerhaft auf echte Eingaben (Klick, Taste,
-Scrollrad, Touch): Die erste davon schaltet den Ton nach. Diese Listener bleiben
-liegen, damit der Ton auch nach einem Leerlauf-Wechsel wieder zurückkommt.
+Scrollrad, Touch): Die erste davon schaltet den Ton nach.
 
 Für den Ausstellungsbetrieb lässt sich die Sperre ganz abschalten, dann klingt
 das Video sofort ab dem Laden:
@@ -79,20 +77,6 @@ das Video sofort ab dem Laden:
 ```bash
 open -a "Google Chrome" --args --autoplay-policy=no-user-gesture-required
 ```
-
-Nach 40 Sekunden ohne Eingabe (Maus, Tastatur, Scrollen, Touch) wechselt die
-Site zurück auf `/gestalterisch` und stellt das Video mittig in den Viewport –
-nicht im Grossbildmodus. Die Blende dauert dabei bewusst 900 ms statt der
-300 ms eines normalen Seitenwechsels, aus- wie einblendend, damit der Wechsel
-ruhig wirkt. Der Scroll-Sprung selbst passiert verdeckt hinter der Blende;
-sichtbares Scrollen über mehrere tausend Pixel wäre unruhiger. Steht das Video
-bereits mittig, passiert nichts, damit die Seite im Leerlauf nicht alle
-40 Sekunden blinkt. Wechselt sie von einer anderen Seite her, lädt die Zielseite
-neu – der Ton ist dann wieder von der Autoplay-Sperre betroffen. Bleibt sie auf
-`/gestalterisch`, läuft der Ton durch.
-
-Die Werte stehen als `IDLE_MS`, `IDLE_FADE_MS` und `IDLE_PATH` oben im Abschnitt
-«IDLE-ATTRACT» von `src/js/app.js`.
 
 ## Behobene Punkte gegenüber der Vue-Version
 

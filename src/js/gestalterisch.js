@@ -7,11 +7,10 @@
 //      Seite (Lesereihenfolge über data-gallery-index). Im Grossbildmodus läuft
 //      der Ton dort, das Hintergrundvideo pausiert; nach dem Schliessen läuft es
 //      normal weiter.
-//   3. Hooks für den Idle-Modus aus app.js: Video mittig in den Viewport holen.
 //
 // ZUM TON: Kein Browser lässt eine frisch geladene Seite von sich aus mit Ton
-// starten – weder nach einem Reload noch nach dem Rücksprung aus dem Leerlauf,
-// denn beides ist ein neues Dokument ohne Nutzer-Interaktion. Das Video startet
+// starten – auch nicht nach einem Reload,
+// denn das ist ein neues Dokument ohne Nutzer-Interaktion. Das Video startet
 // deshalb stumm, und diese Datei holt den Ton so früh nach, wie es der Browser
 // zulässt:
 //   • bei der ersten echten Eingabe (Klick, Tastendruck, Touch) sofort,
@@ -21,11 +20,10 @@
 // Für den Dauerbetrieb (Ausstellung, Kiosk) muss die Freigabe einmal im Browser
 // gesetzt werden. Safari: Menü «Safari» → «Einstellungen für diese Website …» →
 // «Automatische Wiedergabe» → «Alle automatischen Wiedergaben erlauben».
-// Danach läuft der Ton auch direkt nach Reload und Leerlauf-Rücksprung.
+// Danach läuft der Ton auch direkt nach einem Reload.
 
 // Ab diesem sichtbaren Anteil gilt das Video als «im Sichtfeld» und bekommt Ton.
 const SOUND_RATIO = 0.5
-const IDLE_FLAG = 'idleToVideo'
 
 // 0,0125 s Stille (8 kHz, mono) als Data-URI. Damit lässt sich prüfen, ob der
 // Browser Ton gerade erlaubt, ohne das Hero-Video anzufassen: ein abgelehnter
@@ -217,7 +215,7 @@ function requestSound(fromGesture) {
 }
 
 // Jede echte Eingabe gilt dem Browser als Freigabe. Die Listener bleiben liegen,
-// damit das nach Idle-Wechsel, Lightbox oder Reload wieder greift.
+// damit das nach Lightbox oder Reload wieder greift.
 function onActivation() {
   if (!hero) return
   if (shouldHaveSound()) {
@@ -310,38 +308,6 @@ function initHero() {
   observer.observe(hero)
 }
 
-// ── ZENTRIEREN (Hooks für den Idle-Modus in app.js) ──────────────────────────
-
-// Zielposition, bei der das Video mittig im freien Bereich unter der Topbar
-// steht. Ein 16:9-Video über die volle Inhaltsbreite ist fast immer etwas höher
-// als dieser Bereich – dann wird bewusst nicht oben angeschlagen, sondern
-// symmetrisch zentriert, sodass oben und unten gleich viel wegfällt.
-function heroScrollTarget() {
-  if (!hero) return null
-  const rect = hero.getBoundingClientRect()
-  const bar = document.querySelector('.topbar')?.getBoundingClientRect().height || 0
-  const free = window.innerHeight - bar
-  const offset = (free - rect.height) / 2
-  return Math.max(0, rect.top + window.scrollY - bar - offset)
-}
-
-function centerHero() {
-  const target = heroScrollTarget()
-  if (target == null) return
-  // behavior 'auto' überstimmt das globale scroll-behavior: smooth – der Sprung
-  // passiert hinter der Blende und soll nicht zusätzlich sichtbar scrollen.
-  window.scrollTo({ top: target, behavior: 'auto' })
-  // Der Rücksprung aus dem Leerlauf hat keine Eingabe hinter sich: hier beginnt
-  // die Hintergrundprüfung von vorn, damit der Ton so früh wie möglich kommt.
-  restartProbe()
-}
-
-function heroIsCentered() {
-  const target = heroScrollTarget()
-  if (target == null) return false
-  return Math.abs(window.scrollY - target) < 24
-}
-
 // ── LIGHTBOX ─────────────────────────────────────────────────────────────────
 
 function initLightbox() {
@@ -393,18 +359,6 @@ function init() {
   initHero()
   initLightbox()
   initSoundRecovery()
-
-  window.__gestaltCenterVideo = centerHero
-  window.__gestaltVideoCentered = heroIsCentered
-
-  // Aus dem Idle-Modus einer anderen Seite hierher gewechselt: direkt beim
-  // Video landen, noch bevor die Einblendung von app.js läuft.
-  try {
-    if (sessionStorage.getItem(IDLE_FLAG) === '1') {
-      sessionStorage.removeItem(IDLE_FLAG)
-      centerHero()
-    }
-  } catch (e) {}
 }
 
 if (document.readyState === 'loading') {
